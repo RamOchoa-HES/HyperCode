@@ -1,10 +1,15 @@
 ## Team: HyperCode
+
 #### Product: LibStatsHelper
+
 - German Guzman - Product Owner
 - Ram Ochoa - Scrum Master
 - Tofik Mussa - Developer
 - Jeffrey Winning - Developer
-#### Far Vision: Library stats tracking made simple.
+
+#### Product far Vision
+
+Library stats tracking made simple.
 #### Near Vision: Access Services Component Interface
 #### Type of Stakeholders: Libraries, Academic institutions, Graduate Students (MLS), and Library administration.
 #### Stakeholder Name: Samantha Cabral, Assistant Director at Regina Library 
