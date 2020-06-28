@@ -9,7 +9,8 @@
 
 #### Product far Vision
 
-Library stats tracking made simple.
+Library statistics tracking made simple is our moto. We plan to have a one stop shop for libraries to tailor their services to the needs of their users. We plan to have dashboards per the categories of services the library provides. We plan to have visually attractive charts in order to cater to a non-technical audience. Our stakeholders can gauge customer satisfaction and introduce new services based on consistent feedback. Our interface will have data entry and editing functionalities to be used by administrators
+
 #### Near Vision: Access Services Component Interface
 #### Type of Stakeholders: Libraries, Academic institutions, Graduate Students (MLS), and Library administration.
 #### Stakeholder Name: Samantha Cabral, Assistant Director at Regina Library 
