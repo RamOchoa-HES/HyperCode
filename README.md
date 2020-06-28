@@ -9,7 +9,7 @@
 #### Stakeholder Name: Regina Library 
 ##### User Persona: A librarian who wants to easily keep track of all counts within the library. 
 
-## DEFENITION OF BACKLOG ITEM TO BE READY
+## DEFINITION OF BACKLOG ITEM TO BE READY
 
 ### 1) Product backlog item title is entered.
 ### 2) Product backlog item brief description (user story opening sentence) is entered.
