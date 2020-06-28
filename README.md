@@ -37,6 +37,7 @@ We prioritized our backlog items based on need and dependencies in the following
 5. Write design documents 
 6. Track progress between team members
 
+Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 #### Goals for Sprint 1
 
