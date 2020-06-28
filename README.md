@@ -6,7 +6,7 @@
 ### Jeffrey Winning - Developer
 #### Far Vision: Library stats tracking made simple.
 #### Near Vision: Access Services Component Interface
-#### Type of Stakeholders: Libraries, Academic institutions, and Library administration.
+#### Type of Stakeholders: Libraries, Academic institutions, Graduate Students (librarians), and Library administration.
 #### Stakeholder Name: Samantha Cabral, Assistant Director at Regina Library 
 ##### User Persona: A librarian who wants to easily keep track of all counts within the library.
 
