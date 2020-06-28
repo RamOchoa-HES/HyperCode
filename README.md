@@ -1,5 +1,5 @@
 ## Team: HyperCode
-## Product: LibStatsHelper
+### Product: LibStatsHelper
 ### German Guzman - Product Owner
 ### Tofik Mussa - Lead Developer
 ### Ram Ochoa - ScrumMaster
