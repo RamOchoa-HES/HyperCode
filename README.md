@@ -10,6 +10,8 @@
 #### Stakeholder Name: Samantha Cabral, Assistant Director at Regina Library 
 ##### User Persona: A librarian who wants to easily keep track of all counts within the library.
 
+## Initial Backlog Logic: 1) Tools needed for development were first 2) Design for MVP 3) Define database 4) define testing strategies 5) Document product 6) track progress. 
+
 
 ## DEFINITION OF BACKLOG ITEM TO BE READY
 
