@@ -22,11 +22,11 @@ We plan on gatheiring business requirements, defining wireframes and designing d
 #### Stakeholder 
 - Samantha Cabral, Assistant Director at Regina Library 
 
-#### User Persona: 
+#### User Persona
 
 - Samantha is a library administrator. She has witnessed the challenge of having a portal to track customer needs and satisfaction. There are currently documents in spreadsheets but it is currenty difficult to analyze and present to leadership.
 
-#### Initial Backlog Logic: 
+#### Initial Backlog Logic
 
 - Access to tools needed for development are obtained and setup
 - Design for MVP 
