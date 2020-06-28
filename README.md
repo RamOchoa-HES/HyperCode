@@ -28,12 +28,14 @@ We plan on gatheiring business requirements, defining wireframes and designing d
 
 #### Initial Backlog Logic
 
-- Access to tools needed for development are obtained and setup
-- Design for MVP 
-- Define database tables
-- Define testing strategies 
-- Write design documents 
-- Track progress between team members
+We prioritized our backlog items based on need and dependencies in the following order
+
+1. Access to tools needed for development are obtained and setup
+2. Design wireframes for initial pages 
+3. Define database tables
+4. Define testing strategies 
+5. Write design documents 
+6. Track progress between team members
 
 
 #### Goals for Sprint 1
