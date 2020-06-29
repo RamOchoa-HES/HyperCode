@@ -56,3 +56,9 @@ https://trello.com/b/MKYrschO/hypercode
 #### To join our slack channel, visit
 
 https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
+
+### Next steps
+
+- Define defition of ready for user stories and give story point estimates
+
+Our development team has given initial estimates but leaving it as an action item till it gets covered in class
