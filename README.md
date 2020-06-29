@@ -43,8 +43,13 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 - Product backlog items are entered and refined.
 - Points for backlog items are estimated by the development team
+- Development environment setup is completed
 - Stories and wireframes are approved by stakeholder
 - Any dependencies are identified and prioritized accordingly
 - Backlog items are prioritized
 - Fully defined stories of priority are picked up by the development team
+
+#### Link to our Trello Board
+
+
 
