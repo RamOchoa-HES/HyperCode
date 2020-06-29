@@ -51,5 +51,5 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 #### Link to our Trello Board
 
-
+https://trello.com/b/MKYrschO/hypercode
 
