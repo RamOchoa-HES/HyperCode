@@ -53,3 +53,6 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 https://trello.com/b/MKYrschO/hypercode
 
+#### To join our slack channel, visit
+
+https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
