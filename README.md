@@ -24,7 +24,7 @@ We plan on gatheiring business requirements, defining wireframes and designing d
 
 #### User Persona
 
-- Samantha is a library administrator. She has witnessed the challenge of having a portal to track customer needs and resource utilization. There are currently documents in spreadsheets but it is currenty difficult to analyze and present to leadership.
+- Samantha is a library administrator. She has witnessed the challenge of having a portal to track customer needs and resource utilization. There are currently documents in spreadsheets but it is difficult to gather, analyze, and present to leadership.
 
 #### Initial Backlog Logic
 
