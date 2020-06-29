@@ -19,7 +19,7 @@ We plan on gatheiring business requirements, defining wireframes and designing d
 
 - Library staff, Academic institutions, and Library administration personnel.
 
-#### Stakeholder 
+#### Real stakeholder 
 - Samantha Cabral, Assistant Director at Regina Library 
 
 #### User Persona
