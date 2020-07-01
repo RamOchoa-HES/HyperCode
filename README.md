@@ -40,14 +40,16 @@ We prioritized our backlog items based on need and dependencies in the following
 5.  Access Services Editor UI
 6.  ERC Display UI
 7.  ERC Editor UI
-8.  Marketing & OutReach Display UI
-9.  Marketing & Outreach Editor UI
-10. Inter-Library Loan Display UI
-11. Inter-Library Loan Editor UI
-12. Electronic Information Display UI
-13. Electronic Information Editor UI
-14. Research & Instruction Display UI
-15. Research & Instruction Editor UI
+8.  Research & Instruction Display UI
+9.  Research & Instruction Editor UI
+10. Marketing & OutReach Display UI
+11. Marketing & Outreach Editor UI
+12. Inter-Library Loan Display UI
+13. Inter-Library Loan Editor UI
+14. Technical Services Display UI
+15. Technical Services Editor UI
+16. Electronic Information Display UI
+17. Electronic Information Editor UI
 
 Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
