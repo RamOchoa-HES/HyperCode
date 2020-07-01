@@ -35,7 +35,7 @@ We prioritized our backlog items based on need and dependencies in the following
 
 1.  Design wireframes
 2.  Create Landing Page
-3.  Create Login page
+3.  Create Login Page
 4.  Access Services Display UI
 5.  Access Services Editor UI
 6.  ERC Display UI
