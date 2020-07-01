@@ -48,7 +48,15 @@ We prioritized our backlog items based on need and dependencies in the following
 
 Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
-Note: The first three list are for the Product Backlog only. The technical lists are only for our team internal tasks.
+Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.
+
+#### Definition of ready for a backlog item
+
+1. Product backlog item has a title.
+2. Product backlog item has a brief description (user story opening sentence).
+3. Estimated points are clearly displayed in the title after meeting with Dev Team, Product owner, and Scrum Master and agreed upon by all.
+4. Product backlog item has dependencies defined and have a status of completed.
+5. There is at least one team member assigned to the backlog item.
 
 #### Goals for Sprint 1
 
@@ -59,6 +67,10 @@ Note: The first three list are for the Product Backlog only. The technical lists
 - Any dependencies are identified and prioritized accordingly
 - Backlog items are prioritized
 - Fully defined stories of priority are picked up by the development team
+
+#### Story Points Estimate meeting 6/30/2020
+
+After the class, the team had a meeting to go over the product backlog and assign points on each story. The development team had the final say on the story points.
 
 #### Link to our Trello Board
 
