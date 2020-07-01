@@ -57,7 +57,7 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 1. Product backlog item has a title.
 2. Product backlog item has a brief description (user story opening sentence).
-3. Estimated points are clearly displayed in the title after meeting with Dev Team, Product owner, and Scrum Master and agreed upon by all.
+3. Estimated points are clearly displayed in the title after meeting with Dev Team, Product Owner, and Scrum Master and agreed upon by all.
 4. Product backlog item has dependencies defined and have a status of completed.
 5. There is at least one team member assigned to the backlog item.
 
