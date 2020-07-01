@@ -31,6 +31,8 @@
 
 We prioritized our backlog items based on need and dependencies in the following order:
 
+Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.
+
 1.  Design wireframes for initial pages
 2.  Create landing page
 3.  Login user page
@@ -47,8 +49,6 @@ We prioritized our backlog items based on need and dependencies in the following
 14. Research & Instruction Editor UI
 
 Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
-
-Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.
 
 #### Definition of ready for a backlog item
 
