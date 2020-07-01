@@ -31,7 +31,7 @@
 
 We prioritized our backlog items based on need and dependencies in the following order:
 
-Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.
+*Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.*
 
 1.  Design wireframes for initial pages
 2.  Create landing page
