@@ -6,10 +6,11 @@
 - Ram Ochoa - Scrum Master
 - Tofik Mussa - Developer
 - Jeffrey Winning - Developer
+- Kristen Rutherford - Developer
 
 #### Our far vision
 
-- Library statistics tracking made simple is our moto. We plan to have a one stop shop for libraries to tailor their services to the needs of their users. We plan to have dashboards per the categories of services the library provides. We plan to have visually attractive charts in order to cater to a non-technical audience. Our stakeholders can gauge customer satisfaction and introduce new services based on consistent feedback. Our interface will have data entry and editing functionalities to be used by administrators
+- Library statistics tracking made simple is our moto. We plan to have a one stop shop for libraries to tailor their services to the needs of their users. We plan to have dashboards per the categories of services the library provides. We plan to have visually attractive charts in order to cater to a non-technical audience. Our stakeholders can gauge customer satisfaction and introduce new services based on consistent feedback. Our interface will have data entry and editing functionalities to be used by administrators.
 
 #### Our near vision 
 
@@ -17,14 +18,14 @@ We plan on gatheiring business requirements, defining wireframes and designing d
 
 #### Our stakeholders
 
-- Public libraries, Academic institutions, Graduate Students (MLS), and Library administration personnel.
+- Library staff, Academic institutions, and Library administration personnel.
 
-#### Stakeholder 
+#### Real stakeholder 
 - Samantha Cabral, Assistant Director at Regina Library 
 
 #### User Persona
 
-- Samantha is a library administrator. She has witnessed the challenge of having a portal to track customer needs and satisfaction. There are currently documents in spreadsheets but it is currenty difficult to analyze and present to leadership.
+- Samantha is a library administrator. She has witnessed the challenge of having a portal to track customer needs and resource utilization. There are currently documents in spreadsheets but it is difficult to gather, analyze, and present to leadership.
 
 #### Initial Backlog Logic
 
@@ -43,8 +44,22 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
 - Product backlog items are entered and refined.
 - Points for backlog items are estimated by the development team
+- Development environment setup is completed
 - Stories and wireframes are approved by stakeholder
 - Any dependencies are identified and prioritized accordingly
 - Backlog items are prioritized
 - Fully defined stories of priority are picked up by the development team
 
+#### Link to our Trello Board
+
+https://trello.com/b/MKYrschO/hypercode
+
+#### To join our slack channel, visit
+
+https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
+
+### Next steps
+
+- Define defition of ready for user stories and give story point estimates
+
+Our development team has given initial estimates but leaving it as an action item till it gets covered in class
