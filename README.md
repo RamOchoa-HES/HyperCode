@@ -33,20 +33,21 @@ We prioritized our backlog items based on need and dependencies in the following
 
 *Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.*
 
-1.  Design wireframes for initial pages
-2.  Create landing page
-3.  Login user page
+1.  Design wireframes
+2.  Create Landing Page
+3.  Create Login page
 4.  Access Services Display UI
 5.  Access Services Editor UI
 6.  ERC Display UI
 7.  ERC Editor UI
-8.  Marketing & Outreach Editor UI
-9.  Inter-Library Loan Display UI
-10. Inter-Library Loan Editor UI
-11. Electronic Information Display UI
-12. Electronic Information Editor UI
-13. Research & Instruction Display UI
-14. Research & Instruction Editor UI
+8.  Marketing & OutReach Display UI
+9.  Marketing & Outreach Editor UI
+10. Inter-Library Loan Display UI
+11. Inter-Library Loan Editor UI
+12. Electronic Information Display UI
+13. Electronic Information Editor UI
+14. Research & Instruction Display UI
+15. Research & Instruction Editor UI
 
 Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 
