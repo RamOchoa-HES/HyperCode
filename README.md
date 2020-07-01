@@ -14,7 +14,7 @@
 
 #### Our near vision 
 
-We plan on gatheiring business requirements, defining wireframes and designing database tables in our first sprint. We plan on tackling the landing page and the Access Services Component Page after that. 
+- We plan on gatheiring business requirements, defining wireframes and designing database tables in our first sprint. We plan on tackling the landing page and the Access Services Component Page after that. 
 
 #### Our stakeholders
 
