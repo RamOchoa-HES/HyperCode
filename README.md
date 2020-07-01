@@ -51,7 +51,9 @@ We prioritized our backlog items based on need and dependencies in the following
 16. Electronic Information Display UI
 17. Electronic Information Editor UI
 
-Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
+#### Link to our Trello Board
+
+https://trello.com/b/MKYrschO/hypercode
 
 #### Definition of ready for a backlog item
 
@@ -74,10 +76,6 @@ Product Backlog URL: https://trello.com/b/MKYrschO/hypercode
 #### Story Points Estimate meeting 6/30/2020
 
 After the class, the team had a meeting to go over the product backlog and assign points on each story. Story points were estimated based on difficulty. Only Dev team members participated in the process of estimating story points.
-
-#### Link to our Trello Board
-
-https://trello.com/b/MKYrschO/hypercode
 
 #### To join our slack channel, visit
 
