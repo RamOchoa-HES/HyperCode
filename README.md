@@ -58,8 +58,9 @@ https://trello.com/b/MKYrschO/hypercode
 
 https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
 
-### Next steps
+### Additional work completed 
 
-- Define defition of ready for user stories and give story point estimates
+- Define defition of ready defined for user stories 
+- Story points estimated based on difficulty. All team members participated in the process of estimating and the majority vote influenced what ended up getting assigned 
+- Stories ordered based on necessity and dependencies
 
-Our development team has given initial estimates but leaving it as an action item till it gets covered in class
