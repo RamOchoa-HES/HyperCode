@@ -10,11 +10,11 @@
 
 #### Our far vision
 
-- Library statistics tracking made simple is our moto. We plan to have a one stop shop for libraries to tailor their services to the needs of their users. We plan to have dashboards per the categories of services the library provides. We plan to have visually attractive charts in order to cater to a non-technical audience. Our stakeholders can gauge customer satisfaction and introduce new services based on consistent feedback. Our interface will have data entry and editing functionalities to be used by administrators.
+- Library statistics tracking made simple is our motto. We plan to have a one stop shop for libraries to track their service usage, by their patrons/customers, throughout the year. We plan to have dashboards per the categories of services the library provides. We plan to have visually attractive charts in order to cater to a non-technical audience. Our stakeholders can gauge utilization of existing services and change or introduce new services based on consistent and uniform tracking. Our interface will have data entry and editing functionalities to be used by administrators.
 
 #### Our near vision
 
-- We plan on gathering business requirements, defining wireframes and designing database tables in our first sprint. We plan on tackling the landing page and the Access Services Component Page after that.
+- We plan on gathering business requirements, defining wireframes and designing database tables in our first sprint. The first point of order in delivering the product will be completing the landing page and the Access Services Component Page after that.
 
 #### Our stakeholders
 
