@@ -70,7 +70,7 @@ Note: The first three lists on the Trello Board are for the Product Backlog only
 
 #### Story Points Estimate meeting 6/30/2020
 
-After the class, the team had a meeting to go over the product backlog and assign points on each story. The development team had the final say on the story points.
+After the class, the team had a meeting to go over the product backlog and assign points on each story. Story points were estimated based on difficulty. Only Dev team members participated in the process of estimating story points.
 
 #### Link to our Trello Board
 
@@ -79,9 +79,3 @@ https://trello.com/b/MKYrschO/hypercode
 #### To join our slack channel, visit
 
 https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
-
-### Additional work completed
-
-- Define definition of ready defined for user stories
-- Story points estimated based on difficulty. All team members participated in the process of estimating and the majority vote influenced what ended up getting assigned
-- Stories ordered based on necessity and dependencies
