@@ -1,0 +1,122 @@
+<section class="education mt-5">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <form>
+      <div class="row">
+        <div class="form-group mr-2">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            class="form-control"
+            id="year"
+            name="year"
+            [(ngModel)]="educationService.year"
+          />
+        </div>
+        <div class="form-group mr-2">
+          <label for="semester">Semester</label>
+          <input
+            type="number"
+            class="form-control"
+            id="semester"
+            name="semester"
+            [(ngModel)]="educationService.semester"
+          />
+        </div>
+        <div class="form-group mr-2">
+          <label for="programs"># of Programs Held</label>
+          <input
+            type="number"
+            class="form-control"
+            id="programs"
+            name="numberOfPrograms"
+            [(ngModel)]="educationService.numberOfPrograms"
+          />
+        </div>
+        <div class="form-group mr-2">
+          <label for="attendance"># in Attendance</label>
+          <input
+            type="number"
+            class="form-control"
+            id="attendance"
+            name="numberInAttendance"
+            [(ngModel)]="educationService.numberInAttendance"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group mr-2">
+          <label for="feedback"># Feedback Wall Responses</label>
+          <input
+            type="number"
+            class="form-control"
+            id="feedback"
+            name="feedbackWallResponses"
+            [(ngModel)]="educationService.feedbackWallResponses"
+          />
+        </div>
+        <div class="form-group mr-2">
+          <label for="facebook"># of Facebook Followers</label>
+          <input
+            type="number"
+            class="form-control"
+            id="facebook"
+            name="facebookFollowers"
+            [(ngModel)]="educationService.facebookFollowers"
+          />
+        </div>
+        <div class="form-group mr-2">
+          <label for="instagram"># of Instagram Followers</label>
+          <input
+            type="number"
+            class="form-control"
+            id="instagram"
+            name="instagramFollowers"
+            [(ngModel)]="educationService.instagramFollowers"
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="affirm" />
+          <label class="form-check-label" for="affirm"
+            >I affirm that the information entered is correct</label
+          >
+        </div>
+        <button
+          type="button"
+          (click)="addEducationalService()"
+          class="btn btn-primary ml-5"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <div class="mx-auto mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Year</th>
+            <th scope="col">Semester</th>
+            <th scope="col"># of Programs Held</th>
+            <th scope="col"># in Attendance</th>
+            <th scope="col"># of Feedback Wall Responses</th>
+            <th scope="col"># of Facebook Followers</th>
+            <th scope="col"># of Instagram Followers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let education of educationServiceList">
+            <td>{{ education.year }}</td>
+            <td>{{ education.semester }}</td>
+            <td>{{ education.numberOfPrograms }}</td>
+            <td>{{ education.numberInAttendance }}</td>
+            <td>{{ education.feedbackWallResponses }}</td>
+            <td>{{ education.facebookFollowers }}</td>
+            <td>{{ education.instagramFollowers }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
