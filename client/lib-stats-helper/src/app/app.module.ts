@@ -13,6 +13,11 @@ import { TechnicalComponent } from "./technical/technical.component";
 import { ElectronicComponent } from "./electronic/electronic.component";
 import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
+import { AddNewComponent } from './access-services/add-new/add-new.component';
+import { ViewPastComponent } from './access-services/view-past/view-past.component';
+import { YearlyStatComponent } from './yearly-stat/yearly-stat.component';
+import { ViewPastEducationComponent } from './education/view-past-education/view-past-education.component';
+import { AddNewEducationComponent } from './education/add-new-education/add-new-education.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,11 @@ import { LoginComponent } from "./login/login.component";
     ElectronicComponent,
     HomeComponent,
     LoginComponent,
+    AddNewComponent,
+    ViewPastComponent,
+    YearlyStatComponent,
+    ViewPastEducationComponent,
+    AddNewEducationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

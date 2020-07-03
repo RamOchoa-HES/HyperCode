@@ -7,8 +7,6 @@ import { AccessService } from "../models/models";
   styleUrls: ["./access-services.component.css"],
 })
 export class AccessServicesComponent implements OnInit, OnChanges {
-  accessService = new AccessService();
-  accessServiceList: AccessService[] = new Array();
 
   constructor() {}
 
@@ -16,7 +14,4 @@ export class AccessServicesComponent implements OnInit, OnChanges {
 
   ngOnChanges() {}
 
-  addAccessService() {
-    this.accessServiceList.push(this.accessService);
-  }
 }
