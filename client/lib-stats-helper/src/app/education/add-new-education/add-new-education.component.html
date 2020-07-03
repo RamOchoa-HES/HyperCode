@@ -1,21 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="mr-auto">
-    <ul class="navbar-nav mr-5">
-      <li class="nav-item" style="opacity: 1;">
-        <a class="nav-link" routerLink="../add"
-          ><strong>Click to Add New Stats</strong></a
-        >
-      </li>
-      <li class="nav-item ml-5">
-        <a class="nav-link" routerLink="../view"
-          ><strong>Click to View Past Stats</strong></a
-        >
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<form class="mx-auto col-md-4">
+<form class="mx-auto col-md-4 mt-5">
   <div class="form-group">
     <label for="year">Year</label>
     <input
@@ -23,6 +6,7 @@
       class="form-control"
       id="year"
       name="year"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.year"
     />
   </div>
@@ -33,6 +17,7 @@
       class="form-control"
       id="semester"
       name="semester"
+      placeholder="Enter Fall, Spring or Summer"
       [(ngModel)]="educationService.semester"
     />
   </div>
@@ -43,6 +28,7 @@
       class="form-control"
       id="programs"
       name="numberOfPrograms"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.numberOfPrograms"
     />
   </div>
@@ -53,6 +39,7 @@
       class="form-control"
       id="attendance"
       name="numberInAttendance"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.numberInAttendance"
     />
   </div>
@@ -64,6 +51,7 @@
       class="form-control"
       id="feedback"
       name="feedbackWallResponses"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.feedbackWallResponses"
     />
   </div>
@@ -74,6 +62,7 @@
       class="form-control"
       id="facebook"
       name="facebookFollowers"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.facebookFollowers"
     />
   </div>
@@ -84,22 +73,35 @@
       class="form-control"
       id="instagram"
       name="instagramFollowers"
+      placeholder="Enter a number"
       [(ngModel)]="educationService.instagramFollowers"
     />
   </div>
   <div class="text-center">
     <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="affirm" />
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="affirm"
+        name="isCorrect"
+        [(ngModel)]="educationService.isCorrect"
+      />
       <label class="form-check-label" for="affirm"
         >I affirm that the information entered is correct</label
       >
     </div>
-    <button
-      type="button"
-      (click)="addEducationalService()"
-      class="btn btn-primary ml-5"
-    >
-      Submit
-    </button>
+    <div class="btn-group mb-5">
+      <button
+        type="button"
+        (click)="addEducationalService()"
+        [disabled]="isInvalid()"
+        class="btn btn-primary mr-3"
+      >
+        Submit
+      </button>
+      <button type="button" (click)="reset()" class="btn btn-danger">
+        Start Over
+      </button>
+    </div>
   </div>
 </form>

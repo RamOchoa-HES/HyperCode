@@ -1,6 +1,6 @@
 export class AccessService {
   year: number;
-  semester: number;
+  semester: String;
   physicalItem: number;
   groupStudyRoom: number;
   numberOfCourseReserves: number;
@@ -10,7 +10,7 @@ export class AccessService {
 
 export class EducationService {
   year: number;
-  semester: number;
+  semester: String;
   numberOfPrograms: number;
   numberInAttendance: number;
   feedbackWallResponses: number;
