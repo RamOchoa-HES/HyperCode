@@ -9,15 +9,9 @@ import { AccessService } from "../../models/models";
 export class AddNewComponent implements OnInit {
   accessService = new AccessService();
 
-  @Output() accessServiceInfo = new EventEmitter<AccessService>();
-
   constructor() {}
 
   ngOnInit() {}
-
-  addAccessService() {
-    this.accessServiceInfo.emit(this.accessService);
-  }
 
   isInvalid() {
     if (

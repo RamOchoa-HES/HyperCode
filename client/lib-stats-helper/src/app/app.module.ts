@@ -18,6 +18,16 @@ import { ViewPastComponent } from './access-services/view-past/view-past.compone
 import { YearlyStatComponent } from './yearly-stat/yearly-stat.component';
 import { ViewPastEducationComponent } from './education/view-past-education/view-past-education.component';
 import { AddNewEducationComponent } from './education/add-new-education/add-new-education.component';
+import { AddNewResourceComponent } from './resource/add-new-resource/add-new-resource.component';
+import { ViewPastResourceComponent } from './resource/view-past-resource/view-past-resource.component';
+import { AddNewMarketingComponent } from './marketing/add-new-marketing/add-new-marketing.component';
+import { ViewPastMarketingComponent } from './marketing/view-past-marketing/view-past-marketing.component';
+import { AddNewInterlibraryComponent } from './interlibrary/add-new-interlibrary/add-new-interlibrary.component';
+import { ViewPastInterlibraryComponent } from './interlibrary/view-past-interlibrary/view-past-interlibrary.component';
+import { AddNewTechnicalComponent } from './technical/add-new-technical/add-new-technical.component';
+import { ViewPastTechnicalComponent } from './technical/view-past-technical/view-past-technical.component';
+import { AddNewElectronicComponent } from './electronic/add-new-electronic/add-new-electronic.component';
+import { ViewPastElectronicComponent } from './electronic/view-past-electronic/view-past-electronic.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +46,16 @@ import { AddNewEducationComponent } from './education/add-new-education/add-new-
     YearlyStatComponent,
     ViewPastEducationComponent,
     AddNewEducationComponent,
+    AddNewResourceComponent,
+    ViewPastResourceComponent,
+    AddNewMarketingComponent,
+    ViewPastMarketingComponent,
+    AddNewInterlibraryComponent,
+    ViewPastInterlibraryComponent,
+    AddNewTechnicalComponent,
+    ViewPastTechnicalComponent,
+    AddNewElectronicComponent,
+    ViewPastElectronicComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

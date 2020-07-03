@@ -1,5 +1,4 @@
 import { Component, OnInit, OnChanges } from "@angular/core";
-import { AccessService } from "../models/models";
 
 @Component({
   selector: "app-access-services",
@@ -7,8 +6,6 @@ import { AccessService } from "../models/models";
   styleUrls: ["./access-services.component.css"],
 })
 export class AccessServicesComponent implements OnInit, OnChanges {
-  showViewPast = true;
-
   constructor() {}
 
   ngOnInit() {}

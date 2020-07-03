@@ -1,4 +1,7 @@
-.login-image {
-  width: 10px;
-  height: 10px;
+.navbar a {
+  font-size: 0.8em !important;
+}
+
+.navbar .dropdown-item {
+  font-size: 0.7em !important;
 }

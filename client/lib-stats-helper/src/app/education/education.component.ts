@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { EducationService } from "../models/models";
 
 @Component({
@@ -7,15 +7,9 @@ import { EducationService } from "../models/models";
   styleUrls: ["./education.component.css"],
 })
 export class EducationComponent implements OnInit {
-  showViewPast = true;
-
   educationInfo: EducationService;
 
   constructor() {}
 
   ngOnInit() {}
-
-  onNewInfo(educationInfo: EducationService) {
-    this.educationInfo = educationInfo;
-  }
 }

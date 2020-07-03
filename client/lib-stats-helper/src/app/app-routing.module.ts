@@ -1,5 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { RouterModule, Routes } from "@angular/router";
+
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { AccessServicesComponent } from "./access-services/access-services.component";
@@ -15,7 +17,16 @@ import { ViewPastComponent } from "./access-services/view-past/view-past.compone
 import { YearlyStatComponent } from "./yearly-stat/yearly-stat.component";
 import { AddNewEducationComponent } from "./education/add-new-education/add-new-education.component";
 import { ViewPastEducationComponent } from "./education/view-past-education/view-past-education.component";
-import { RouterModule, Routes } from "@angular/router";
+import { AddNewResourceComponent } from "./resource/add-new-resource/add-new-resource.component";
+import { ViewPastResourceComponent } from "./resource/view-past-resource/view-past-resource.component";
+import { AddNewMarketingComponent } from "./marketing/add-new-marketing/add-new-marketing.component";
+import { ViewPastMarketingComponent } from "./marketing/view-past-marketing/view-past-marketing.component";
+import { AddNewInterlibraryComponent } from "./interlibrary/add-new-interlibrary/add-new-interlibrary.component";
+import { ViewPastInterlibraryComponent } from "./interlibrary/view-past-interlibrary/view-past-interlibrary.component";
+import { AddNewTechnicalComponent } from "./technical/add-new-technical/add-new-technical.component";
+import { ViewPastTechnicalComponent } from "./technical/view-past-technical/view-past-technical.component";
+import { AddNewElectronicComponent } from "./electronic/add-new-electronic/add-new-electronic.component";
+import { ViewPastElectronicComponent } from "./electronic/view-past-electronic/view-past-electronic.component";
 
 export const routes: Routes = [
   { path: "", component: AppComponent, pathMatch: "full" },
@@ -26,10 +37,20 @@ export const routes: Routes = [
   { path: "education/add", component: AddNewEducationComponent },
   { path: "education/view", component: ViewPastEducationComponent },
   { path: "education", component: EducationComponent },
+  { path: "resource/add", component: AddNewResourceComponent },
+  { path: "resource/view", component: ViewPastResourceComponent },
   { path: "resource", component: ResourceComponent },
+  { path: "marketing/add", component: AddNewMarketingComponent },
+  { path: "marketing/view", component: ViewPastMarketingComponent },
   { path: "marketing", component: MarketingComponent },
+  { path: "interlibrary/add", component: AddNewInterlibraryComponent },
+  { path: "interlibrary/view", component: ViewPastInterlibraryComponent },
   { path: "interlibrary", component: InterlibraryComponent },
+  { path: "technical/add", component: AddNewTechnicalComponent },
+  { path: "technical/view", component: ViewPastTechnicalComponent },
   { path: "technical", component: TechnicalComponent },
+  { path: "electronic/add", component: AddNewElectronicComponent },
+  { path: "electronic/view", component: ViewPastElectronicComponent },
   { path: "electronic", component: ElectronicComponent },
   { path: "yearly", component: YearlyStatComponent },
   { path: "login", component: LoginComponent },
