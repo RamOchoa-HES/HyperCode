@@ -1,3 +1,451 @@
-<p>
-  add-new-resource works!
-</p>
+<form class="col-md-8 mx-auto mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="form-group mr-2">
+        <label for="year">Year</label>
+        <input
+          type="number"
+          class="form-control"
+          id="year"
+          name="year"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.year"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="semester">Semester</label>
+        <input
+          type="text"
+          class="form-control"
+          id="semester"
+          name="semester"
+          placeholder="Enter Fall, Spring or Summer"
+          [(ngModel)]="researchInstruction.semester"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="numOfLibraryInstructions"
+          >Number of Library Instructions</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="numOfLibraryInstructions"
+          name="numOfLibraryInstructions"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.numOfLibraryInstructions"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="group">Number of Students in Instructions</label>
+        <input
+          type="numOfStudentInstructions"
+          class="form-control"
+          type="number"
+          id="numOfStudentInstructions"
+          name="numOfStudentInstructions"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.numOfStudentInstructions"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="directionalType">Directional - type</label>
+        <input
+          type="number"
+          class="form-control"
+          id="directionalType"
+          name="directionalType"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.directionalType"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="referenceType">Reference - type</label>
+        <input
+          type="number"
+          class="form-control"
+          id="referenceType"
+          name="referenceType"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.referenceType"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="technicalType">Technical - type</label>
+        <input
+          type="number"
+          class="form-control"
+          id="technicalType"
+          name="technicalType"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.technicalType"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="techLiteracyType">Technology Literacy - type</label>
+        <input
+          type="number"
+          class="form-control"
+          id="techLiteracyType"
+          name="techLiteracyType"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.techLiteracyType"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="reginaLibraryLocation">Regina Library - location</label>
+        <input
+          type="number"
+          class="form-control"
+          id="reginaLibraryLocation"
+          name="reginaLibraryLocation"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.reginaLibraryLocation"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="ercLocation">ERC - location</label>
+        <input
+          type="number"
+          class="form-control"
+          id="ercLocation"
+          name="ercLocations"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.ercLocation"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="learningCommonsLocation">Learning Commons - location</label>
+        <input
+          type="number"
+          class="form-control"
+          id="learningCommonsLocation"
+          name="learningCommonsLocation"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.learningCommonsLocation"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="contactedLibrarianLocation"
+          >Contacted librarian directly - location</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          id="contactedLibrarianLocation"
+          name="contactedLibrarianLocation"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.contactedLibrarianLocation"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="inPersonFormat">In person -format</label>
+        <input
+          type="number"
+          class="form-control"
+          id="inPersonFormat"
+          name="inPersonFormat"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.inPersonFormat"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="chatTextFormat">Chat/Text - format</label>
+        <input
+          type="number"
+          class="form-control"
+          id="chatTextFormat"
+          name="chatTextFormat"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.chatTextFormat"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="emailFormat">Email - format</label>
+        <input
+          type="number"
+          class="form-control"
+          id="emailFormat"
+          name="emailFormat"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.emailFormat"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="phoneFormat">Phone - format</label>
+        <input
+          type="number"
+          class="form-control"
+          id="phoneFormat"
+          name="phoneFormat"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.phoneFormat"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="zoomFormat">Zoom - format</label>
+        <input
+          type="number"
+          class="form-control"
+          id="zoomFormat"
+          name="zoomFormat"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.zoomFormat"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="undergraduateStudent">Undergraduate Student</label>
+        <input
+          type="number"
+          class="form-control"
+          id="undergraduateStudent"
+          name="undergraduateStudent"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.undergraduateStudent"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="graduateStudent">Graduate Student</label>
+        <input
+          type="number"
+          class="form-control"
+          id="graduateStudent"
+          name="graduateStudent"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.graduateStudent"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="doctoralStudent">Doctoral Student</label>
+        <input
+          type="number"
+          class="form-control"
+          id="doctoralStudent"
+          name="doctoralStudent"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.doctoralStudent"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="facultyStaff">Faculty/Staff</label>
+        <input
+          type="number"
+          class="form-control"
+          id="facultyStaff"
+          name="facultyStaff"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.facultyStaff"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="alumni">Alumni</label>
+        <input
+          type="number"
+          class="form-control"
+          id="alumni"
+          name="alumni"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.alumni"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="nhcUc">NHC UC</label>
+        <input
+          type="number"
+          class="form-control"
+          id="nhcUc"
+          name="nhcUc"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.nhcUc"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="riseMember">Rise Member</label>
+        <input
+          type="number"
+          class="form-control"
+          id="riseMember"
+          name="riseMember"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.riseMember"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="unknown">Unknown</label>
+        <input
+          type="number"
+          class="form-control"
+          id="unknown"
+          name="unknown"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.unknown"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="onlineStudent">Online Student</label>
+        <input
+          type="number"
+          class="form-control"
+          id="onlineStudent"
+          name="onlineStudent"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.onlineStudent"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="nonAffiliated">Non-affiliated</label>
+        <input
+          type="number"
+          class="form-control"
+          id="nonAffiliated"
+          name="nonAffiliated"
+          placeholder="Enter a number"
+          [(ngModel)]="researchInstruction.nonAffiliated"
+        />
+      </div>
+    </div>
+    <div
+      class="form-group drop-month mr-2"
+      (change)="selectedMonth1Func($event.target.value)"
+    >
+      <label for="drop-month"
+        >Select the First Month in the Quarter to Enter Patreon Counts</label
+      >
+      <select
+        class="custom-select"
+        id="drop-month"
+        name="selectedMonth1"
+        [(ngModel)]="selectedMonth1"
+      >
+        <option *ngFor="let month of monthList" [value]="month">{{
+          month
+        }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedMonth1">
+      <label for="patreonMonth1">How many for {{ selectedMonth1 }}?</label>
+      <input
+        type="number"
+        class="form-control"
+        id="group"
+        name="patreonMonth1"
+        [(ngModel)]="researchInstruction.patreonMonth1"
+        placeholder="Enter a number"
+      />
+    </div>
+    <div
+      class="form-group drop-month mr-2"
+      (change)="selectedMonth2Func($event.target.value)"
+    >
+      <label for="drop-month"
+        >Select the Second Month in the Quarter to Enter Patreon Counts</label
+      >
+      <select
+        class="custom-select"
+        id="drop-month"
+        name="selectedMonth2"
+        [(ngModel)]="selectedMonth2"
+      >
+        <option *ngFor="let month of monthList" [value]="month">{{
+          month
+        }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedMonth2">
+      <label for="patreonMonth2">How many for {{ selectedMonth2 }}?</label>
+      <input
+        type="number"
+        class="form-control"
+        id="group"
+        name="patreonMonth2"
+        [(ngModel)]="researchInstruction.patreonMonth2"
+        placeholder="Enter a number"
+      />
+    </div>
+    <div
+      class="form-group drop-month mr-2"
+      (change)="selectedMonth3Func($event.target.value)"
+    >
+      <label for="drop-month"
+        >Select the Third Month in the Quarter to Enter Patreon Counts</label
+      >
+      <select
+        class="custom-select"
+        id="drop-month"
+        name="selectedMonth3"
+        [(ngModel)]="selectedMonth3"
+      >
+        <option *ngFor="let month of monthList" [value]="month">{{
+          month
+        }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedMonth3">
+      <label for="patreonMonth3">How many for {{ selectedMonth3 }}?</label>
+      <input
+        type="number"
+        class="form-control"
+        id="group"
+        name="patreonMonth3"
+        [(ngModel)]="researchInstruction.patreonMonth3"
+        placeholder="Enter a number"
+      />
+    </div>
+    <div
+      class="form-group drop-month mr-2"
+      (change)="selectedMonth4Func($event.target.value)"
+    >
+      <label for="drop-month"
+        >Select the Fourth Month in the Quarter to Enter Patreon Counts</label
+      >
+      <select
+        class="custom-select"
+        id="drop-month"
+        name="selectedMonth4"
+        [(ngModel)]="selectedMonth4"
+      >
+        <option *ngFor="let month of monthList" [value]="month">{{
+          month
+        }}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="selectedMonth4">
+      <label for="patreonMonth4">How many for {{ selectedMonth4 }}?</label>
+      <input
+        type="number"
+        class="form-control"
+        id="patreonMonth4"
+        name="patreonMonth4"
+        [(ngModel)]="researchInstruction.patreonMonth4"
+        placeholder="Enter a number"
+      />
+    </div>
+    <div class="text-center">
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="affirm"
+          name="isCorrect"
+          [(ngModel)]="researchInstruction.isCorrect"
+        />
+        <label class="form-check-label" for="affirm"
+          >I would like to submit the statistics</label
+        >
+      </div>
+      <div class="btn-group mb-5">
+        <button
+          type="button"
+          (click)="addResearchInstruction()"
+          [disabled]="isInvalid()"
+          class="btn btn-primary mr-3"
+        >
+          Submit
+        </button>
+        <button type="button" (click)="reset()" class="btn btn-danger">
+          Start Over
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
