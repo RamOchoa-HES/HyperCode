@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TechincalService } from 'src/app/models/models';
 
 @Component({
   selector: 'app-view-past-technical',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewPastTechnicalComponent implements OnInit {
 
+  technicalServiceList : TechincalService[] = new Array();
+  
   constructor() { }
 
   ngOnInit() {

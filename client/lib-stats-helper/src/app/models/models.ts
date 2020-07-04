@@ -50,6 +50,46 @@ export class ERCMarketing {
   patreonMonth4: number;
   patreonMonth4Name: string;
 }
+
+export class TechincalService {
+  year: number;
+  semester: String;
+  numberOfBooksDVDs: number;
+  additionalItems: number;
+  numberOfEbooks: number;
+  patreonMonth1: number;
+  patreonMonth1Name: string;
+  patreonMonth2: number;
+  patreonMonth2Name: string;
+  patreonMonth3: number;
+  patreonMonth3Name: string;
+  patreonMonth4: number;
+  patreonMonth4Name: string;
+  isCorrect: number;
+}
+
+export class InterLibraryLoan {
+  year: number;
+  semester: String;
+  numOfRequestedArticlesBorrowing: number;
+  numOfRequestedArticlesLending: number;
+  numOfRequestedBooksBorrowing: number;
+  numOfRequestedBooksLending: number;
+  getItNow: number;
+  docDeliveryAlreadyOwned: number;
+  docDeliveryFoundFree: number;
+  docDeliveryPurchased: number;
+  patreonMonth1: number;
+  patreonMonth1Name: string;
+  patreonMonth2: number;
+  patreonMonth2Name: string;
+  patreonMonth3: number;
+  patreonMonth3Name: string;
+  patreonMonth4: number;
+  patreonMonth4Name: string;
+  isCorrect: number;
+}
+
 export const Months = [
   "January",
   "February",

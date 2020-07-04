@@ -1,3 +1,41 @@
-<p>
-  view-past-interlibrary works!
-</p>
+<div class="col-md-6 mt-5 ml-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Quarter</th>
+        <th scope="col"># of requested Articles - Borrowing</th>
+        <th scope="col"># of requested Articles - Lending</th>
+        <th scope="col"># of requested Books - Borrowing</th>
+        <th scope="col"># of requested Books - Lending</th>
+        <th scope="col">Get it Now - Purchased</th>
+        <th scope="col">DocDelivery - Already Owned</th>
+        <th scope="col">DocDelivery - Found for free</th>
+        <th scope="col">DocDelivery - Purchased</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let interLibrary of interLibraryLoanList">
+        <td>{{ interLibrary?.year }}</td>
+        <td>{{ interLibrary?.semester }}</td>
+        <td>{{ interLibrary?.numOfRequestedArticlesBorrowing }}</td>
+        <td>{{ interLibrary?.numOfRequestedArticlesLending }}</td>
+        <td>{{ interLibrary?.numOfRequestedBooksBorrowing }}</td>
+        <td>{{ interLibrary?.numOfRequestedBooksLending }}</td>
+        <td>{{ interLibrary?.getItNow }}</td>
+        <td>{{ interLibrary?.docDeliveryAlreadyOwned }}</td>
+        <td>{{ interLibrary?.docDeliveryFoundFree }}</td>
+        <td>{{ interLibrary?.docDeliveryPurchased }}</td>
+        <td>
+          {{
+            interLibrary?.patreonMonth1 +
+              interLibrary?.patreonMonth2 +
+              interLibrary?.patreonMonth3 +
+              interLibrary?.patreonMonth4
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

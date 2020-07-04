@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InterLibraryLoan } from 'src/app/models/models';
 
 @Component({
   selector: 'app-view-past-interlibrary',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-past-interlibrary.component.css']
 })
 export class ViewPastInterlibraryComponent implements OnInit {
+
+  interLibraryLoanList : InterLibraryLoan [] = new Array();
 
   constructor() { }
 
