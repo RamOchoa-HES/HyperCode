@@ -7,9 +7,13 @@ export class AccessService {
   numberOfItemReserves: number;
   isCorrect: boolean;
   patreonMonth1: number;
+  patreonMonth1Name: string;
   patreonMonth2: number;
+  patreonMonth2Name: string;
   patreonMonth3: number;
+  patreonMonth3Name: string;
   patreonMonth4: number;
+  patreonMonth4Name: string;
 }
 
 export class EducationService {
@@ -22,9 +26,13 @@ export class EducationService {
   instagramFollowers: number;
   isCorrect: boolean;
   patreonMonth1: number;
+  patreonMonth1Name: string;
   patreonMonth2: number;
+  patreonMonth2Name: string;
   patreonMonth3: number;
+  patreonMonth3Name: string;
   patreonMonth4: number;
+  patreonMonth4Name: string;
 }
 
 export const Months = [

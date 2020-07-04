@@ -52,17 +52,21 @@ export class AddNewComponent implements OnInit {
 
   selectedMonth1Func(value) {
     this.selectedMonth1 = value;
+    this.accessService.patreonMonth1Name = this.selectedMonth1;
   }
 
   selectedMonth2Func(value) {
     this.selectedMonth2 = value;
+    this.accessService.patreonMonth2Name = this.selectedMonth2;
   }
 
   selectedMonth3Func(value) {
     this.selectedMonth3 = value;
+    this.accessService.patreonMonth3Name = this.selectedMonth3;
   }
 
   selectedMonth4Func(value) {
     this.selectedMonth4 = value;
+    this.accessService.patreonMonth4Name = this.selectedMonth4;
   }
 }

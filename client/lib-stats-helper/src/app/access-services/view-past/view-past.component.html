@@ -3,21 +3,30 @@
     <thead>
       <tr>
         <th scope="col">Year</th>
-        <th scope="col">Semester</th>
+        <th scope="col">Quarter</th>
         <th scope="col">Physical Items Circled</th>
         <th scope="col">Group Study Rooms - Keys Borrowed</th>
         <th scope="col">Course Reserves - # of Items</th>
         <th scope="col">Course Reserves - # of Courses</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let access of accessServiceList">
-        <td>{{ access.year }}</td>
-        <td>{{ access.semester }}</td>
-        <td>{{ access.physicalItem }}</td>
-        <td>{{ access.groupStudyRoom }}</td>
-        <td>{{ access.numberOfItemReserves }}</td>
-        <td>{{ access.numberOfCourseReserves }}</td>
+        <td>{{ access?.year }}</td>
+        <td>{{ access?.semester }}</td>
+        <td>{{ access?.physicalItem }}</td>
+        <td>{{ access?.groupStudyRoom }}</td>
+        <td>{{ access?.numberOfItemReserves }}</td>
+        <td>{{ access?.numberOfCourseReserves }}</td>
+        <td>
+          {{
+            access?.patreonMonth1 +
+              access?.patreonMonth2 +
+              access?.patreonMonth3 +
+              access?.patreonMonth4
+          }}
+        </td>
       </tr>
     </tbody>
   </table>
