@@ -1,3 +1,29 @@
-<p>
-  view-past-marketing works!
-</p>
+<div class="mx-auto col-md-6 mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Semester</th>
+        <th scope="col">Lamination - # of Items</th>
+        <th scope="col">Binding - # of Requests</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ercMarketing of ercMarketingList">
+        <td>{{ ercMarketing?.year }}</td>
+        <td>{{ ercMarketing?.semester }}</td>
+        <td>{{ ercMarketing?.lamination }}</td>
+        <td>{{ ercMarketing?.binding }}</td>
+        <td>
+          {{
+            ercMarketing?.patreonMonth1 +
+              ercMarketing?.patreonMonth2 +
+              ercMarketing?.patreonMonth3 +
+              ercMarketing?.patreonMonth4
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
