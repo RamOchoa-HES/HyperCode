@@ -19,6 +19,7 @@ public class AccessService {
     @Id
     @GeneratedValue
     private int idacceesservice;
+//    test
     private int countpatronaccessservice;
     private int countgrpstdyr;
     private int countcrsreservetms;
