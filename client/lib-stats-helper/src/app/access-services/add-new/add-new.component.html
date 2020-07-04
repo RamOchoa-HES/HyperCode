@@ -1,95 +1,215 @@
 <form class="col-md-4 mx-auto mt-5">
-  <div class="form-group mr-2">
-    <label for="year">Year</label>
-    <input
-      type="number"
-      class="form-control"
-      id="year"
-      name="year"
-      placeholder="Enter a number"
-      [(ngModel)]="accessService.year"
-    />
-  </div>
-  <div class="form-group mr-2">
-    <label for="semester">Semester</label>
-    <input
-      type="text"
-      class="form-control"
-      id="semester"
-      name="semester"
-      placeholder="Enter Fall, Spring or Summer"
-      [(ngModel)]="accessService.semester"
-    />
-  </div>
-  <div class="form-group mr-2">
-    <label for="physical">Physical Items Circled</label>
-    <input
-      type="number"
-      class="form-control"
-      id="physical"
-      name="physicalItem"
-      placeholder="Enter a number"
-      [(ngModel)]="accessService.physicalItem"
-    />
-  </div>
-  <div class="form-group mr-2">
-    <label for="group">Group Study Rooms</label>
-    <input
-      type="number"
-      class="form-control"
-      id="group"
-      name="groupStudyRoom"
-      placeholder="Enter a number"
-      [(ngModel)]="accessService.groupStudyRoom"
-    />
-  </div>
-  <div class="form-group mr-2">
-    <label for="item">Course Reserves - # of Items</label>
-    <input
-      type="number"
-      class="form-control"
-      id="item"
-      name="numberOfCourseReserves"
-      placeholder="Enter a number"
-      [(ngModel)]="accessService.numberOfCourseReserves"
-    />
-  </div>
-  <div class="form-group mr-2">
-    <label for="physical">Course Reserves - # of Courses</label>
-    <input
-      type="number"
-      class="form-control"
-      id="physical"
-      name="numberOfItemReserves"
-      placeholder="Enter a number"
-      [(ngModel)]="accessService.numberOfItemReserves"
-    />
-  </div>
-  <div class="text-center">
-    <div class="form-group form-check">
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="affirm"
-        name="isCorrect"
-        [(ngModel)]="accessService.isCorrect"
-      />
-      <label class="form-check-label" for="affirm"
-        >I would like to submit the statistics</label
+  <div class="container">
+    <div class="row">
+      <div class="form-group mr-2">
+        <label for="year">Year</label>
+        <input
+          type="number"
+          class="form-control"
+          id="year"
+          name="year"
+          placeholder="Enter a number"
+          [(ngModel)]="accessService.year"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="semester">Semester</label>
+        <input
+          type="text"
+          class="form-control"
+          id="semester"
+          name="semester"
+          placeholder="Enter Fall, Spring or Summer"
+          [(ngModel)]="accessService.semester"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="physical">Physical Items Circled</label>
+        <input
+          type="number"
+          class="form-control"
+          id="physical"
+          name="physicalItem"
+          placeholder="Enter a number"
+          [(ngModel)]="accessService.physicalItem"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="group">Group Study Rooms</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="groupStudyRoom"
+          placeholder="Enter a number"
+          [(ngModel)]="accessService.groupStudyRoom"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="item">Course Reserves - # of Items</label>
+        <input
+          type="number"
+          class="form-control"
+          id="item"
+          name="numberOfCourseReserves"
+          placeholder="Enter a number"
+          [(ngModel)]="accessService.numberOfCourseReserves"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="physical">Course Reserves - # of Courses</label>
+        <input
+          type="number"
+          class="form-control"
+          id="physical"
+          name="numberOfItemReserves"
+          placeholder="Enter a number"
+          [(ngModel)]="accessService.numberOfItemReserves"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth1Func($event.target.value)"
       >
-    </div>
-    <div class="btn-group mb-5">
-      <button
-        type="button"
-        (click)="addAccessService()"
-        [disabled]="isInvalid()"
-        class="btn btn-primary mr-3"
+        <label for="drop-month"
+          >Select the First Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth1"
+          [(ngModel)]="selectedMonth1"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth1">
+        <label for="patreonMonth1">How many for {{ selectedMonth1 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth1"
+          [(ngModel)]="accessService.patreonMonth1"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth2Func($event.target.value)"
       >
-        Submit
-      </button>
-      <button type="button" (click)="reset()" class="btn btn-danger">
-        Start Over
-      </button>
+        <label for="drop-month"
+          >Select the Second Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth2"
+          [(ngModel)]="selectedMonth2"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth2">
+        <label for="patreonMonth2">How many for {{ selectedMonth2 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth2"
+          [(ngModel)]="accessService.patreonMonth2"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth3Func($event.target.value)"
+      >
+        <label for="drop-month"
+          >Select the Third Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth3"
+          [(ngModel)]="selectedMonth3"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth3">
+        <label for="patreonMonth3">How many for {{ selectedMonth3 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth3"
+          [(ngModel)]="accessService.patreonMonth3"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth4Func($event.target.value)"
+      >
+        <label for="drop-month"
+          >Select the Fourth Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth4"
+          [(ngModel)]="selectedMonth4"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth4">
+        <label for="patreonMonth4">How many for {{ selectedMonth4 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="patreonMonth4"
+          name="patreonMonth4"
+          [(ngModel)]="accessService.patreonMonth4"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div class="text-center">
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="affirm"
+            name="isCorrect"
+            [(ngModel)]="accessService.isCorrect"
+          />
+          <label class="form-check-label" for="affirm"
+            >I would like to submit the statistics</label
+          >
+        </div>
+        <div class="btn-group mb-5">
+          <button
+            type="button"
+            (click)="addAccessService()"
+            [disabled]="isInvalid()"
+            class="btn btn-primary mr-3"
+          >
+            Submit
+          </button>
+          <button type="button" (click)="reset()" class="btn btn-danger">
+            Start Over
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </form>

@@ -1,5 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from "@angular/core";
-import { AccessService } from "../../models/models";
+import { Component, OnInit } from "@angular/core";
+import { AccessService, Months } from "../../models/models";
 
 @Component({
   selector: "app-add-new",
@@ -8,6 +8,13 @@ import { AccessService } from "../../models/models";
 })
 export class AddNewComponent implements OnInit {
   accessService = new AccessService();
+
+  monthList = Months;
+
+  selectedMonth1: any = null;
+  selectedMonth2: any = null;
+  selectedMonth3: any = null;
+  selectedMonth4: any = null;
 
   constructor() {}
 
@@ -37,5 +44,25 @@ export class AddNewComponent implements OnInit {
     this.accessService.numberOfItemReserves = 0;
     this.accessService.isCorrect = false;
     this.accessService.physicalItem = 0;
+  }
+
+  addAccessService() {
+    console.log("access ", this.accessService);
+  }
+
+  selectedMonth1Func(value) {
+    this.selectedMonth1 = value;
+  }
+
+  selectedMonth2Func(value) {
+    this.selectedMonth2 = value;
+  }
+
+  selectedMonth3Func(value) {
+    this.selectedMonth3 = value;
+  }
+
+  selectedMonth4Func(value) {
+    this.selectedMonth4 = value;
   }
 }
