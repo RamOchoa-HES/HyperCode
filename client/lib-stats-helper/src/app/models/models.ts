@@ -35,6 +35,21 @@ export class EducationService {
   patreonMonth4Name: string;
 }
 
+export class ERCMarketing {
+  year: number;
+  semester: String;
+  lamination: number;
+  binding: number;
+  isCorrect: boolean;
+  patreonMonth1: number;
+  patreonMonth1Name: string;
+  patreonMonth2: number;
+  patreonMonth2Name: string;
+  patreonMonth3: number;
+  patreonMonth3Name: string;
+  patreonMonth4: number;
+  patreonMonth4Name: string;
+}
 export const Months = [
   "January",
   "February",

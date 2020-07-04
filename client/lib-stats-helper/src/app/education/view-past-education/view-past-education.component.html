@@ -1,4 +1,4 @@
-<div class="mx-auto col-md-6">
+<div class="mx-auto col-md-6 mt-5">
   <table class="table">
     <thead>
       <tr>
@@ -9,6 +9,7 @@
         <th scope="col"># of Feedback Wall Responses</th>
         <th scope="col"># of Facebook Followers</th>
         <th scope="col"># of Instagram Followers</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,14 @@
         <td>{{ education?.feedbackWallResponses }}</td>
         <td>{{ education?.facebookFollowers }}</td>
         <td>{{ education?.instagramFollowers }}</td>
+        <td>
+          {{
+            education?.patreonMonth1 +
+              education?.patreonMonth2 +
+              education?.patreonMonth3 +
+              education?.patreonMonth4
+          }}
+        </td>
       </tr>
     </tbody>
   </table>

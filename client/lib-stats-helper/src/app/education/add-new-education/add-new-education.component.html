@@ -1,107 +1,227 @@
-<form class="mx-auto col-md-4 mt-5">
-  <div class="form-group">
-    <label for="year">Year</label>
-    <input
-      type="number"
-      class="form-control"
-      id="year"
-      name="year"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.year"
-    />
-  </div>
-  <div class="form-group">
-    <label for="semester">Semester</label>
-    <input
-      type="text"
-      class="form-control"
-      id="semester"
-      name="semester"
-      placeholder="Enter Fall, Spring or Summer"
-      [(ngModel)]="educationService.semester"
-    />
-  </div>
-  <div class="form-group">
-    <label for="programs"># of Programs Held</label>
-    <input
-      type="number"
-      class="form-control"
-      id="programs"
-      name="numberOfPrograms"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.numberOfPrograms"
-    />
-  </div>
-  <div class="form-group">
-    <label for="attendance"># in Attendance</label>
-    <input
-      type="number"
-      class="form-control"
-      id="attendance"
-      name="numberInAttendance"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.numberInAttendance"
-    />
-  </div>
+<form class="col-md-4 mx-auto mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="form-group mr-2">
+        <label for="year">Year</label>
+        <input
+          type="number"
+          class="form-control"
+          id="year"
+          name="year"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.year"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="semester">Semester</label>
+        <input
+          type="text"
+          class="form-control"
+          id="semester"
+          name="semester"
+          placeholder="Enter Fall, Spring or Summer"
+          [(ngModel)]="educationService.semester"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="programs"># of Programs Held</label>
+        <input
+          type="number"
+          class="form-control"
+          id="programs"
+          name="numberOfPrograms"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.numberOfPrograms"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="attendance"># in Attendance</label>
+        <input
+          type="number"
+          class="form-control"
+          id="attendance"
+          name="numberInAttendance"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.numberInAttendance"
+        />
+      </div>
 
-  <div class="form-group">
-    <label for="feedback"># Feedback Wall Responses</label>
-    <input
-      type="number"
-      class="form-control"
-      id="feedback"
-      name="feedbackWallResponses"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.feedbackWallResponses"
-    />
-  </div>
-  <div class="form-group">
-    <label for="facebook"># of Facebook Followers</label>
-    <input
-      type="number"
-      class="form-control"
-      id="facebook"
-      name="facebookFollowers"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.facebookFollowers"
-    />
-  </div>
-  <div class="form-group">
-    <label for="instagram"># of Instagram Followers</label>
-    <input
-      type="number"
-      class="form-control"
-      id="instagram"
-      name="instagramFollowers"
-      placeholder="Enter a number"
-      [(ngModel)]="educationService.instagramFollowers"
-    />
-  </div>
-  <div class="text-center">
-    <div class="form-group form-check">
-      <input
-        type="checkbox"
-        class="form-check-input"
-        id="affirm"
-        name="isCorrect"
-        [(ngModel)]="educationService.isCorrect"
-      />
-      <label class="form-check-label" for="affirm"
-        >I would like to submit the statistics</label
+      <div class="form-group mr-2">
+        <label for="feedback"># Feedback Wall Responses</label>
+        <input
+          type="number"
+          class="form-control"
+          id="feedback"
+          name="feedbackWallResponses"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.feedbackWallResponses"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="facebook"># of Facebook Followers</label>
+        <input
+          type="number"
+          class="form-control"
+          id="facebook"
+          name="facebookFollowers"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.facebookFollowers"
+        />
+      </div>
+      <div class="form-group mr-2">
+        <label for="instagram"># of Instagram Followers</label>
+        <input
+          type="number"
+          class="form-control"
+          id="instagram"
+          name="instagramFollowers"
+          placeholder="Enter a number"
+          [(ngModel)]="educationService.instagramFollowers"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth1Func($event.target.value)"
       >
-    </div>
-    <div class="btn-group mb-5">
-      <button
-        type="button"
-        (click)="addEducationalService()"
-        [disabled]="isInvalid()"
-        class="btn btn-primary mr-3"
+        <label for="drop-month"
+          >Select the First Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth1"
+          [(ngModel)]="selectedMonth1"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth1">
+        <label for="patreonMonth1">How many for {{ selectedMonth1 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth1"
+          [(ngModel)]="educationService.patreonMonth1"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth2Func($event.target.value)"
       >
-        Submit
-      </button>
-      <button type="button" (click)="reset()" class="btn btn-danger">
-        Start Over
-      </button>
+        <label for="drop-month"
+          >Select the Second Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth2"
+          [(ngModel)]="selectedMonth2"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth2">
+        <label for="patreonMonth2">How many for {{ selectedMonth2 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth2"
+          [(ngModel)]="educationService.patreonMonth2"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth3Func($event.target.value)"
+      >
+        <label for="drop-month"
+          >Select the Third Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth3"
+          [(ngModel)]="selectedMonth3"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth3">
+        <label for="patreonMonth3">How many for {{ selectedMonth3 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="group"
+          name="patreonMonth3"
+          [(ngModel)]="educationService.patreonMonth3"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div
+        class="form-group drop-month"
+        (change)="selectedMonth4Func($event.target.value)"
+      >
+        <label for="drop-month"
+          >Select the Fourth Month in the Quarter to Enter Patreon Counts</label
+        >
+        <select
+          class="custom-select"
+          id="drop-month"
+          name="selectedMonth4"
+          [(ngModel)]="selectedMonth4"
+        >
+          <option *ngFor="let month of monthList" [value]="month">{{
+            month
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngIf="selectedMonth4">
+        <label for="patreonMonth4">How many for {{ selectedMonth4 }}?</label>
+        <input
+          type="number"
+          class="form-control"
+          id="patreonMonth4"
+          name="patreonMonth4"
+          [(ngModel)]="educationService.patreonMonth4"
+          placeholder="Enter a number"
+        />
+      </div>
+      <div class="text-center">
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="affirm"
+            name="isCorrect"
+            [(ngModel)]="educationService.isCorrect"
+          />
+          <label class="form-check-label" for="affirm"
+            >I would like to submit the statistics</label
+          >
+        </div>
+        <div class="btn-group mb-5">
+          <button
+            type="button"
+            (click)="addEducationalService()"
+            [disabled]="isInvalid()"
+            class="btn btn-primary mr-3"
+          >
+            Submit
+          </button>
+          <button type="button" (click)="reset()" class="btn btn-danger">
+            Start Over
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </form>

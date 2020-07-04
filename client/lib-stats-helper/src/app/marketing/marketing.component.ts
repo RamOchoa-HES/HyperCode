@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-marketing',
-  templateUrl: './marketing.component.html',
-  styleUrls: ['./marketing.component.css']
+  selector: "app-marketing",
+  templateUrl: "./marketing.component.html",
+  styleUrls: ["./marketing.component.css"],
 })
 export class MarketingComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

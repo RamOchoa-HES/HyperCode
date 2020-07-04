@@ -44,6 +44,14 @@ export class AddNewComponent implements OnInit {
     this.accessService.numberOfItemReserves = 0;
     this.accessService.isCorrect = false;
     this.accessService.physicalItem = 0;
+    this.accessService.patreonMonth1 = 0;
+    this.accessService.patreonMonth1Name = "";
+    this.accessService.patreonMonth2 = 0;
+    this.accessService.patreonMonth2Name = "";
+    this.accessService.patreonMonth3 = 0;
+    this.accessService.patreonMonth3Name = "";
+    this.accessService.patreonMonth4 = 0;
+    this.accessService.patreonMonth4Name = "";
   }
 
   addAccessService() {
