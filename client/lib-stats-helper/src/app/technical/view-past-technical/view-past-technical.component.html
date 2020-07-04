@@ -1,3 +1,31 @@
-<p>
-  view-past-technical works!
-</p>
+<div class="mx-auto col-md-6 mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Semester</th>
+        <th scope="col"># of Books/DVDs cataloged</th>
+        <th scope="col">Additional Physical Items cataloged</th>
+        <th scope="col"># of Ebook Records added/revised</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let technicalService of technicalServiceList">
+        <td>{{ technicalService?.year }}</td>
+        <td>{{ technicalService?.semester }}</td>
+        <td>{{ technicalService?.numberOfBooksDVDs }}</td>
+        <td>{{ technicalService?.additionalItems }}</td>
+        <td>{{ technicalService?.numberOfEbooks }}</td>
+        <td>
+          {{
+            technicalService?.patreonMonth1 +
+              technicalService?.patreonMonth2 +
+              technicalService?.patreonMonth3 +
+              technicalService?.patreonMonth4
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
