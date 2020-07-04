@@ -27,6 +27,8 @@ import { AddNewTechnicalComponent } from "./technical/add-new-technical/add-new-
 import { ViewPastTechnicalComponent } from "./technical/view-past-technical/view-past-technical.component";
 import { AddNewElectronicComponent } from "./electronic/add-new-electronic/add-new-electronic.component";
 import { ViewPastElectronicComponent } from "./electronic/view-past-electronic/view-past-electronic.component";
+import { LogOutComponent } from "./log-out/log-out.component";
+import { RegisterUserComponent } from "./register-user/register-user.component";
 
 export const routes: Routes = [
   { path: "", component: AppComponent, pathMatch: "full" },
@@ -54,6 +56,8 @@ export const routes: Routes = [
   { path: "electronic", component: ElectronicComponent },
   { path: "yearly", component: YearlyStatComponent },
   { path: "login", component: LoginComponent },
+  { path: "logout", component: LogOutComponent },
+  { path: "register", component: RegisterUserComponent },
 ];
 
 @NgModule({
