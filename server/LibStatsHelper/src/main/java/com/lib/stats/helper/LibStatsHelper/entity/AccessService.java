@@ -18,6 +18,12 @@ public class AccessService {
     @Id
     @GeneratedValue
     private int id;
+
+
+    public AccessService(int year) {
+        this.year = year;
+    }
+
     private int year;
     private String semester;
     private int physicalItem;
