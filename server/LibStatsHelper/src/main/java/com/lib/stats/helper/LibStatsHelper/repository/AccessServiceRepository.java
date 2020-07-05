@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface AccessServiceRepository extends JpaRepository<AccessService, Integer> {
 
-    AccessService findAccessServiceBySemester(String semester);
+    AccessService findAccessServiceBySemesterContaining(String semester);
 
     List<AccessService> findAccessServiceByYearEquals(int year);
 }
