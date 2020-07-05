@@ -13,8 +13,8 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "ACCESS_SERVICES_TBL")
-public class AccessService {
+@Table(name = "ELECTRONIC_INFORMATION_TBL")
+public class ElectronicInformation {
 
     @Id
     @GeneratedValue
@@ -22,11 +22,18 @@ public class AccessService {
 
     private int year;
     private String semester;
-    private int physicalItem;
-    private int groupStudyRoom;
-    private int numberOfCourseReserves;
-    private int numberOfItemReserves;
-    private boolean isCorrect;
+    private int uniquePageViewsInASession;
+    private int uniqueUserSessions;
+    private int bibliographicDatabasesFullText;
+    private int bibliographicDatabasesSearches;
+    private int fullTextDatabasesFullText;
+    private int fullTextDatabasesSearches;
+    private int edsSearches;
+    private int edsSessions;
+    private int edsTotalFullText;
+    private int edsAbstract;
+    private int ebooksUsed;
+    private int streamVideosViewed;
     private int patreonMonth1;
     private String patreonMonth1Name;
     private int patreonMonth2;
@@ -35,4 +42,5 @@ public class AccessService {
     private String patreonMonth3Name;
     private int patreonMonth4;
     private String patreonMonth4Name;
+    private boolean isCorrect;
 }

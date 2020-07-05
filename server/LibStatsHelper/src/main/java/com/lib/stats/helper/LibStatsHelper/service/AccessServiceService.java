@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class AccessServiceService {
@@ -16,7 +17,9 @@ public class AccessServiceService {
         return repository.save(accessservice);
     }
     public List<AccessService> saveAccessServices(List<AccessService> accessservices) {
-        return repository.save(accessservices);
+        return accessservices.stream()
+                .map(accessService -> saveAccessService(accessService))
+                .collect(Collectors.toList());
     }
     public List<AccessService> getAccessServices(){
         return repository.findAll();
@@ -36,7 +39,7 @@ public class AccessServiceService {
         AccessService existingAccessService=repository.findById(accessservice.getId()).orElse(null);
         existingAccessService.setSemester(accessservice.getSemester());
         existingAccessService.setYear(accessservice.getYear());
-        existingAccessService.setphysicalItem(accessservice.getphysicalItem());
+        existingAccessService.setPhysicalItem(accessservice.getPhysicalItem());
         return repository.save(existingAccessService);
     }
 }

@@ -13,8 +13,8 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "ACCESS_SERVICES_TBL")
-public class AccessService {
+@Table(name = "ERC_MARKETING_TBL")
+public class ERCMarketing {
 
     @Id
     @GeneratedValue
@@ -22,10 +22,8 @@ public class AccessService {
 
     private int year;
     private String semester;
-    private int physicalItem;
-    private int groupStudyRoom;
-    private int numberOfCourseReserves;
-    private int numberOfItemReserves;
+    private int lamination;
+    private int binding;
     private boolean isCorrect;
     private int patreonMonth1;
     private String patreonMonth1Name;
