@@ -24,12 +24,12 @@ public class AccessService {
     private int groupStudyRoom;
     private int numberOfCourseReserves;
     private int numberOfItemReserves;
-    private String patronMonth1;
-    private int patronMonthCount1;
-    private String patronMonth2;
-    private int patronMonthCount2;
-    private String patronMonth3;
-    private int patronMonthCount3;
-    private String patronMonth4;
-    private int patronMonthCount4;
+    private int patronMonth1;
+    private String patreonMonth1Name;
+    private int patreonMonth2;
+    private String patreonMonth2Name;
+    private int patreonMonth3;
+    private String patreonMonth3Name;
+    private int patreonMonth4;
+    private String patreonMonth4Name;
 }
