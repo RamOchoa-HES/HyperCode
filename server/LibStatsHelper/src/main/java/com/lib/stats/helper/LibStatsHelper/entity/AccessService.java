@@ -15,18 +15,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "ACCESS_SERVICES_TBL")
 public class AccessService {
-
     @Id
     @GeneratedValue
     private int id;
-
     private int year;
     private String semester;
     private int physicalItem;
     private int groupStudyRoom;
     private int numberOfCourseReserves;
     private int numberOfItemReserves;
-    private boolean isCorrect;
     private int patreonMonth1;
     private String patreonMonth1Name;
     private int patreonMonth2;

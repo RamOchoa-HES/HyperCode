@@ -13,13 +13,11 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "EDUCATION_SERVICES_TBL")
+@Table(name = "EDUCATION_SERVICE_TBL")
 public class EducationService {
-
     @Id
     @GeneratedValue
     private int id;
-
     private int year;
     private String semester;
     private int numberOfPrograms;
@@ -27,7 +25,6 @@ public class EducationService {
     private int feedbackWallResponses;
     private int facebookFollowers;
     private int instagramFollowers;
-    private boolean isCorrect;
     private int patreonMonth1;
     private String patreonMonth1Name;
     private int patreonMonth2;
@@ -37,3 +34,4 @@ public class EducationService {
     private int patreonMonth4;
     private String patreonMonth4Name;
 }
+
