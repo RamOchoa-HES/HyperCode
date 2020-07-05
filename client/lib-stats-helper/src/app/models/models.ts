@@ -129,6 +129,32 @@ export class ResearchInstruction{
   isCorrect: number;
 }
 
+export class ElectronicInformation{
+  year: number;
+  semester: String;
+  uniquePageViewsInASession: number;
+  uniqueUserSessions: number;
+  bibliographicDatabasesFullText: number;
+  bibliographicDatabasesSearches: number;
+  fullTextDatabasesFullText: number;
+  fullTextDatabasesSearches: number;
+  edsSearches: number;
+  edsSessions: number;
+  edsTotalFullText: number;
+  edsAbstract: number;
+  ebooksUsed: number;
+  streamVideosViewed: number;
+  patreonMonth1: number;
+  patreonMonth1Name: string;
+  patreonMonth2: number;
+  patreonMonth2Name: string;
+  patreonMonth3: number;
+  patreonMonth3Name: string;
+  patreonMonth4: number;
+  patreonMonth4Name: string;
+  isCorrect: number;
+}
+
 export const Months = [
   "January",
   "February",
