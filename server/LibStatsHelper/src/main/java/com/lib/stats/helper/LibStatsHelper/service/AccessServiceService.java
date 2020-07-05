@@ -16,7 +16,7 @@ public class AccessServiceService {
         return repository.save(accessservice);
     }
     public List<AccessService> saveAccessServices(List<AccessService> accessservices) {
-        return repository.save(accessservices);
+        return repository.saveAll(accessservices);
     }
     public List<AccessService> getAccessServices(){
         return repository.findAll();
@@ -32,11 +32,11 @@ public class AccessServiceService {
         return "Access Service Entry has been removed - entry id:"+id;
     }
 
-    public AccessService updateAccessService(AccessService accessservice){
-        AccessService existingAccessService=repository.findById(accessservice.getId()).orElse(null);
-        existingAccessService.setSemester(accessservice.getSemester());
-        existingAccessService.setYear(accessservice.getYear());
-        existingAccessService.setphysicalItem(accessservice.getphysicalItem());
-        return repository.save(existingAccessService);
-    }
+//    public AccessService updateAccessService(AccessService accessservice){
+//        AccessService existingAccessService=repository.findById(accessservice.getId()).orElse(null);
+//        existingAccessService.setSemester(accessservice.getSemester());
+//        existingAccessService.setYear(accessservice.getYear());
+//        existingAccessService.setphysicalItem(accessservice.getphysicalItem());
+//        return repository.save(existingAccessService);
+//    }
 }
