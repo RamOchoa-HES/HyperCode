@@ -15,4 +15,7 @@ export class ViewPastInterlibraryComponent implements OnInit {
   ngOnInit() {
   }
 
+  fetchData(){
+  }
+
 }

@@ -1,3 +1,75 @@
-<p>
-  view-past-resource works!
-</p>
+<div class="mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Quarter</th>
+        <th scope="col">Number of Library Instructions</th>
+        <th scope="col">Number of Students in Instructions</th>
+        <th scope="col">Directional - type</th>
+        <th scope="col">Reference - type</th>
+        <th scope="col">Technical - type</th>
+        <th scope="col">Technology Literacy - type</th>
+        <th scope="col">Regina Library - location</th>
+        <th scope="col">ERC - location</th>
+        <th scope="col">Learning Commons - location</th>
+        <th scope="col">Contacted librarian - location</th>
+        <th scope="col">In person -format</th>
+        <th scope="col">Chat/Text - format</th>
+        <th scope="col">Email - format</th>
+        <th scope="col">Phone - format</th>
+        <th scope="col">Zoom - format</th>
+        <th scope="col">Undergraduate Student</th>
+        <th scope="col">Graduate Student</th>
+        <th scope="col">Doctoral Student</th>
+        <th scope="col">Faculty/Staff</th>
+        <th scope="col">Alumni</th>
+        <th scope="col">NHC UC</th>
+        <th scope="col">Rise Member</th>
+        <th scope="col">Unknown</th>
+        <th scope="col">Online Student</th>
+        <th scope="col">Non-affiliated</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let researchInstruction of researchInstructionList">
+        <td>{{ researchInstruction?.year }}</td>
+        <td>{{ researchInstruction?.semester }}</td>
+        <td>{{ researchInstruction?.numOfLibraryInstructions }}</td>
+        <td>{{ researchInstruction?.nnumOfStudentInstructions }}</td>
+        <td>{{ researchInstruction?.directionalType }}</td>
+        <td>{{ researchInstruction?.referenceType }}</td>
+        <td>{{ researchInstruction?.technicalType }}</td>
+        <td>{{ researchInstruction?.techLiteracyType }}</td>
+        <td>{{ researchInstruction?.reginaLibraryLocation }}</td>
+        <td>{{ researchInstruction?.ercLocation }}</td>
+        <td>{{ researchInstruction?.learningCommonsLocation }}</td>
+        <td>{{ researchInstruction?.contactedLibrarianLocation }}</td>
+        <td>{{ researchInstruction?.inPersonFormat }}</td>
+        <td>{{ researchInstruction?.chatTextFormat }}</td>
+        <td>{{ researchInstruction?.emailFormat }}</td>
+        <td>{{ researchInstruction?.phoneFormat }}</td>
+        <td>{{ researchInstruction?.zoomFormat }}</td>
+        <td>{{ researchInstruction?.undergraduateStudent }}</td>
+        <td>{{ researchInstruction?.graduateStudent }}</td>
+        <td>{{ researchInstruction?.doctoralStudent }}</td>
+        <td>{{ researchInstruction?.facultyStaff }}</td>
+        <td>{{ researchInstruction?.alumni }}</td>
+        <td>{{ researchInstruction?.nhcUc }}</td>
+        <td>{{ researchInstruction?.riseMember }}</td>
+        <td>{{ researchInstruction?.unknown }}</td>
+        <td>{{ researchInstruction?.onlineStudent }}</td>
+        <td>{{ researchInstruction?.nonAffiliated }}</td>
+        <td>
+          {{
+            researchInstruction?.patreonMonth1 +
+              researchInstruction?.patreonMonth2 +
+              researchInstruction?.patreonMonth3 +
+              researchInstruction?.patreonMonth4
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

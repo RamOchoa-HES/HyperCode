@@ -16,4 +16,6 @@ export class ViewPastEducationComponent implements OnInit, OnChanges {
 
   ngOnChanges() {}
 
+  fetchData(){
+  }
 }
