@@ -17,10 +17,6 @@ import java.util.List;
 @RequestMapping("/api")
 public class AccessServiceController {
 
-    public void setService(AccessServiceService service) {
-        this.service = service;
-    }
-
     @Autowired
     private AccessServiceService service;
 
@@ -35,14 +31,14 @@ public class AccessServiceController {
         return service.getAccessServiceById(id);
     }
 
-    @GetMapping("/accessServices/year/{year}")
-    public List<AccessService> getAccessServiceByYear(@PathVariable("year") int year) {
-        return service.getAccessServicesByYear(year);
-    }
-
     @GetMapping("/accessServices/semester/{semester}")
     public AccessService getAccessServiceBySemester(@PathVariable("semester") String semester) {
         return service.getAccessServiceBySemester(semester);
+    }
+
+    @GetMapping("/accessServices/year/{year}")
+    public List<AccessService> getAccessServiceByYear(@PathVariable("year") int year) {
+        return service.getAccessServicesByYear(year);
     }
 
     @PostMapping("/accessService")
@@ -54,7 +50,6 @@ public class AccessServiceController {
     public List<AccessService> createAccessServices(@RequestBody List<AccessService> accessservices) {
         return service.saveAccessServices(accessservices);
     }
-
 
     @DeleteMapping("/accessServices/{id}")
     public String deleteAccessService(@PathVariable int id) {
