@@ -29,7 +29,7 @@ public class AccessServiceController {
     }
 
     @GetMapping("/accessserviceById/{id}")
-    public AccessService findProductById(@PathVariable int id) {
+    public AccessService findAccessServiceById(@PathVariable int id) {
         return service.getAccessServiceById(id);
     }
 

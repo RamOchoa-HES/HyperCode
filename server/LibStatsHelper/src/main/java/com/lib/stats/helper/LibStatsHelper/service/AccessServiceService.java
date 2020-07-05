@@ -25,7 +25,7 @@ public class AccessServiceService {
         return repository.findById(id).orElse(null);
     }
     public AccessService getAccessServiceBySemester(String semester){
-        return repository.findBySemester(semester);
+        return repository.findAccessServiceBySemester(semester);
     }
     public String deleteAccessService(int id){
         repository.deleteById(id);
