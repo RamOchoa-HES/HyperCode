@@ -26,8 +26,8 @@ public class AccessServiceController {
 
     @GetMapping("/accessServices")
     public List<AccessService> getAllAccessServices() {
-        return Arrays.asList(new AccessService(2020));
-        //return service.getAccessServices();
+        //return Arrays.asList(new AccessService(2020));
+        return service.getAccessServices();
     }
 
     @GetMapping("/accessServices/id/{id}")
