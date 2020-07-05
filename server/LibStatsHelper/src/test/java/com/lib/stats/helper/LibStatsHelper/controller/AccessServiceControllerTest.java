@@ -157,6 +157,7 @@ public class AccessServiceControllerTest {
                             .contentType(MediaType.APPLICATION_JSON)
                             .content("{\"id\": 11, \"year\": 2020, \"semester\": \"Summer\"}")
                             .accept(MediaType.APPLICATION_JSON))
-                            .andExpect(status().isOk());
+                            .andExpect(status().isOk())
+                            .andExpect(content().string(deleteMessage));
     }
 }
