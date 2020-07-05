@@ -1,3 +1,51 @@
-<p>
-  view-past-electronic works!
-</p>
+<div class="mt-5 ml-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">Quarter</th>
+        <th scope="col">Unique Page Views in a Session</th>
+        <th scope="col">Unique User Sessions</th>
+        <th scope="col">
+          Bibliographic Databases - Full Text or Abstract Views
+        </th>
+        <th scope="col">Bibliographic Databases - Searches</th>
+        <th scope="col">Full Text Databases - Full Text or Abstract Views</th>
+        <th scope="col">Full Text Databases - Searches</th>
+        <th scope="col">EDS - Searches</th>
+        <th scope="col">EDS - Sessions</th>
+        <th scope="col">EDS - Total Full Text</th>
+        <th scope="col">EDS - Abstract</th>
+        <th scope="col">Ebooks Used</th>
+        <th scope="col">Streaming Videos Viewed</th>
+        <th scope="col">Sum of Patreon Count by Quarter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let electronicInfo of electronicInfoList">
+        <td>{{ electronicInfo?.year }}</td>
+        <td>{{ electronicInfo?.semester }}</td>
+        <td>{{ electronicInfo?.uniquePageViewsInASession }}</td>
+        <td>{{ electronicInfo?.uniqueUserSessions }}</td>
+        <td>{{ electronicInfo?.bibliographicDatabasesFullText }}</td>
+        <td>{{ electronicInfo?.bibliographicDatabasesSearches }}</td>
+        <td>{{ electronicInfo?.fullTextDatabasesFullText }}</td>
+        <td>{{ electronicInfo?.fullTextDatabasesSearches }}</td>
+        <td>{{ electronicInfo?.edsSearches }}</td>
+        <td>{{ electronicInfo?.edsSessions }}</td>
+        <td>{{ electronicInfo?.edsTotalFullText }}</td>
+        <td>{{ electronicInfo?.edsAbstract }}</td>
+        <td>{{ electronicInfo?.ebooksUsed }}</td>
+        <td>{{ electronicInfo?.streamVideosViewed }}</td>
+        <td>
+          {{
+            electronicInfo?.patreonMonth1 +
+              electronicInfo?.patreonMonth2 +
+              electronicInfo?.patreonMonth3 +
+              electronicInfo?.patreonMonth4
+          }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
