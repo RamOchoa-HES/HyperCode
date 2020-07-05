@@ -15,4 +15,7 @@ export class ViewPastTechnicalComponent implements OnInit {
   ngOnInit() {
   }
 
+  fetchData(){
+  }
+
 }

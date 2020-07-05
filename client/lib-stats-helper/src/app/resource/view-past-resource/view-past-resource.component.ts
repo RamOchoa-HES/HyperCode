@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ResearchInstruction } from "../../models/models";
 
 @Component({
-  selector: 'app-view-past-resource',
-  templateUrl: './view-past-resource.component.html',
-  styleUrls: ['./view-past-resource.component.css']
+  selector: "app-view-past-resource",
+  templateUrl: "./view-past-resource.component.html",
+  styleUrls: ["./view-past-resource.component.css"],
 })
 export class ViewPastResourceComponent implements OnInit {
 
-  constructor() { }
+  researchInstructionList : ResearchInstruction [] = new Array();
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit() {}
+
+  fetchData(){
   }
-
 }

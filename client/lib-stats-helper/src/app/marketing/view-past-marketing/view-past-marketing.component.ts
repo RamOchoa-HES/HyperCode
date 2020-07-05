@@ -15,4 +15,6 @@ export class ViewPastMarketingComponent implements OnInit {
   ngOnInit() {
   }
 
+  fetchData(){
+  }
 }

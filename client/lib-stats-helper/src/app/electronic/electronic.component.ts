@@ -12,4 +12,7 @@ export class ElectronicComponent implements OnInit {
   ngOnInit() {
   }
 
+  fetchData(){
+  }
+
 }

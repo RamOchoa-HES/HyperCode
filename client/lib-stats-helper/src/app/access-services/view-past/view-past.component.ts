@@ -12,4 +12,7 @@ export class ViewPastComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  fetchData(){
+  }
 }
