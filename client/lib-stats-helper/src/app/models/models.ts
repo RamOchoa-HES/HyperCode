@@ -65,7 +65,7 @@ export class TechincalService {
   patreonMonth3Name: string;
   patreonMonth4: number;
   patreonMonth4Name: string;
-  isCorrect: number;
+  isCorrect: boolean;
 }
 
 export class InterLibraryLoan {
@@ -87,7 +87,7 @@ export class InterLibraryLoan {
   patreonMonth3Name: string;
   patreonMonth4: number;
   patreonMonth4Name: string;
-  isCorrect: number;
+  isCorrect: boolean;
 }
 
 export class ResearchInstruction{
@@ -126,7 +126,7 @@ export class ResearchInstruction{
   patreonMonth3Name: string;
   patreonMonth4: number;
   patreonMonth4Name: string;
-  isCorrect: number;
+  isCorrect: boolean;
 }
 
 export class ElectronicInformation{
@@ -152,7 +152,7 @@ export class ElectronicInformation{
   patreonMonth3Name: string;
   patreonMonth4: number;
   patreonMonth4Name: string;
-  isCorrect: number;
+  isCorrect: boolean;
 }
 
 export const Months = [

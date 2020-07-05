@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ElectronicInformation } from "../../models/models";
 
 @Component({
-  selector: 'app-view-past-electronic',
-  templateUrl: './view-past-electronic.component.html',
-  styleUrls: ['./view-past-electronic.component.css']
+  selector: "app-view-past-electronic",
+  templateUrl: "./view-past-electronic.component.html",
+  styleUrls: ["./view-past-electronic.component.css"],
 })
 export class ViewPastElectronicComponent implements OnInit {
+  
+  electronicInfoList : ElectronicInformation [] = new Array();
+  
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
+  fetchData() {}
 }

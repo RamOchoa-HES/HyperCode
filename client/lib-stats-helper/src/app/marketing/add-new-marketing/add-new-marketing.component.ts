@@ -38,7 +38,7 @@ export class AddNewMarketingComponent implements OnInit {
     return false;
   }
 
-  eset() {
+  reset() {
     this.ercMarketing.year = 0;
     this.ercMarketing.semester = "";
     this.ercMarketing.lamination = 0;
