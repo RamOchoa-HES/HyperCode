@@ -152,7 +152,7 @@ export class ElectronicInformation{
   patreonMonth3Name: string;
   patreonMonth4: number;
   patreonMonth4Name: string;
-  isCorrect: number;
+  isCorrect: boolean;
 }
 
 export const Months = [
