@@ -78,9 +78,13 @@ https://trello.com/b/MKYrschO/hypercode
 - Backlog items are prioritized
 - Fully defined stories of priority are picked up by the development team
 
-#### Story Points Estimate meeting 6/30/2020
+#### Sprint 1 Forecast
 
-After the class, the team had a meeting to go over the product backlog and assign points on each story. Story points were estimated based on difficulty. Only Dev team members participated in the process of estimating story points.
+We used the poker game to assign points to our stories. Product owner asked the Development Team members to send via Zoom chat how many points a certain story would take to be completed (The range was 0, 0.5, 1,2,3,5,8,13,20,40,100, and infinity). After Product owner, received all chat messages, the product owner informed the team of the results highlighting the highest point and the lowest point. The product owner either went for a second or more  rounds of estimates or the team member compromised to agreed to a specific number (Ex: lowest was 1 and highest was 20. Team agreed on 5).
+
+#### Burndown Chart
+
+https://docs.google.com/spreadsheets/d/1q-lSS1-0E6wuEgTwJVKs6vJMZfvSc5OaFhOEEzCr3Hg/edit?usp=sharing
 
 #### To join our slack channel, visit
 
