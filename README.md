@@ -145,3 +145,31 @@ https://libstatshelperclient.cfapps.io/
 https://hypercode.cfapps.io/api/accessServices
 
 #### Stakeholder evidence of being in Sprint Review
+
+
+Cabral, Samantha
+2:15 PM (1 minute ago)
+to me
+
+Thanks, German.
+
+The project is really coming along and looks great!
+
+Samantha
+
+Samantha E. Cabral
+
+Assistant Director
+Regina Library
+
+Rivier University
+
+(603) 897-8536
+
+
+
+TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
+
+
+
+Strengths: Individualization | Relator | Responsibility | Context | Empathy
