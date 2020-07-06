@@ -38,6 +38,6 @@ public class AccessServiceService {
     }
 
     public List<AccessService> getAccessServicesByYear(int year){
-        return repository.findAccessServiceByYearEquals(year);
+        return repository.findAllByYearEquals(year);
     }
 }

@@ -1,0 +1,9 @@
+applications:
+  - name: LibStatsHelper
+    memory: 768M
+    instances: 1
+    path: target\LibStatsHelper-0.0.1-SNAPSHOT.jar
+    services:
+      - mysqldb
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AccessService, Months } from "../../models/models";
+import { AccessServiceServiceService } from "src/app/services/access-service-service.service";
 
 @Component({
   selector: "app-add-new",
@@ -16,7 +17,7 @@ export class AddNewComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private accessServiceService: AccessServiceServiceService) {}
 
   ngOnInit() {}
 
@@ -55,7 +56,11 @@ export class AddNewComponent implements OnInit {
   }
 
   addAccessService() {
-    console.log("access ", this.accessService);
+    this.accessServiceService
+      .createAccessService(this.accessService)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   selectedMonth1Func(value) {

@@ -9,6 +9,6 @@ public interface AccessServiceRepository extends JpaRepository<AccessService, In
 
     AccessService findAccessServiceBySemesterContaining(String semester);
 
-    List<AccessService> findAccessServiceByYearEquals(int year);
+    List<AccessService> findAllByYearEquals(int year);
 }
 

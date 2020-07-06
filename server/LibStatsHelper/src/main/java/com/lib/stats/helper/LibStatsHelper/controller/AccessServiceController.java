@@ -3,14 +3,12 @@ package com.lib.stats.helper.LibStatsHelper.controller;
 import com.lib.stats.helper.LibStatsHelper.entity.AccessService;
 import com.lib.stats.helper.LibStatsHelper.service.AccessServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -22,8 +20,7 @@ public class AccessServiceController {
 
     @GetMapping("/accessServices")
     public List<AccessService> getAllAccessServices() {
-        return Arrays.asList(new AccessService(2020));
-        //return service.getAccessServices();
+        return service.getAccessServices();
     }
 
     @GetMapping("/accessServices/id/{id}")
