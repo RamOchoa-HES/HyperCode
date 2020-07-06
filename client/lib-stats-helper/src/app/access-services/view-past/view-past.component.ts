@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AccessService } from "../../models/models";
+import { AccessServiceServiceService } from "../../services/access-service-service.service";
 
 @Component({
   selector: "app-view-past",
@@ -9,10 +10,15 @@ import { AccessService } from "../../models/models";
 export class ViewPastComponent implements OnInit {
   accessServiceList: AccessService[] = new Array();
 
-  constructor() {}
+  constructor(private accessServiceService: AccessServiceServiceService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.fetchData();
+  }
 
-  fetchData(){
+  fetchData() {
+    this.accessServiceService.getAccessService().subscribe((data) => {
+      console.log("data ", data);
+    });
   }
 }

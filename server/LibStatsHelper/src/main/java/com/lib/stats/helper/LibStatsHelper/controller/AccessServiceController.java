@@ -10,50 +10,48 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/access")
+@RequestMapping("/api")
 public class AccessServiceController {
+
     @Autowired
     private AccessServiceService service;
 
-    @PostMapping("/addAccessService")
-    public AccessService addAccessService(@RequestBody AccessService accessservice) {
-        return service.saveAccessService(accessservice);
+    @GetMapping("/accessServices")
+    public List<AccessService> getAllAccessServices() {
+        return Arrays.asList(new AccessService(2020));
+        //return service.getAccessServices();
     }
 
-    @PostMapping("/addAccessServices")
-    public List<AccessService> addAccessServices(@RequestBody List<AccessService> accessservices) {
-        return service.saveAccessServices(accessservices);
-    }
-
-    @GetMapping("/accessservices")
-    public List<AccessService> findAllAccessServices() {
-        return service.getAccessServices();
-    }
-
-    @GetMapping("/accessserviceById/{id}")
-    public AccessService findAccessServiceById(@PathVariable int id) {
+    @GetMapping("/accessServices/id/{id}")
+    public AccessService getAccessServiceById(@PathVariable("id") int id) {
         return service.getAccessServiceById(id);
     }
 
-    @GetMapping("/accessservice/{semester}")
-    public AccessService findAccessServiceBySemester(@PathVariable String semester) {
+    @GetMapping("/accessServices/semester/{semester}")
+    public AccessService getAccessServiceBySemester(@PathVariable("semester") String semester) {
         return service.getAccessServiceBySemester(semester);
     }
 
-//    @PutMapping("/update")
-//    public AccessService updateAccessService(@RequestBody AccessService accessservice) {
-//        return service.updateAccessService(accessservice);
-//    }
-
-    @GetMapping
-    public ResponseEntity<List<AccessService>> getAllAccessServices() {
-        return ResponseEntity.ok(service.getAccessServices());
+    @GetMapping("/accessServices/year/{year}")
+    public List<AccessService> getAccessServiceByYear(@PathVariable("year") int year) {
+        return service.getAccessServicesByYear(year);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @PostMapping("/accessService")
+    public AccessService createAccessService(@RequestBody AccessService accessservice) {
+        return service.saveAccessService(accessservice);
+    }
+
+    @PostMapping("/accessServices")
+    public List<AccessService> createAccessServices(@RequestBody List<AccessService> accessservices) {
+        return service.saveAccessServices(accessservices);
+    }
+
+    @DeleteMapping("/accessServices/{id}")
     public String deleteAccessService(@PathVariable int id) {
         return service.deleteAccessService(id);
     }
