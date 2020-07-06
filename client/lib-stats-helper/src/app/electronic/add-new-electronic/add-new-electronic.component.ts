@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ElectronicInformation, Months } from "../../models/models";
+import { ElectronicServiceService } from "../../services/electronic-service.service";
 
 @Component({
   selector: "app-add-new-electronic",
@@ -16,12 +17,16 @@ export class AddNewElectronicComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private electronicServiceService: ElectronicServiceService) {}
 
   ngOnInit() {}
 
   addElectronicInfo() {
-
+    this.electronicServiceService
+      .createElectronicInfo(this.electronicInfo)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   isInvalid() {

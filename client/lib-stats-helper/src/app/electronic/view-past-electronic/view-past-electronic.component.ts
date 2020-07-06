@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ElectronicInformation } from "../../models/models";
+import { ElectronicServiceService } from "../../services/electronic-service.service";
 
 @Component({
   selector: "app-view-past-electronic",
@@ -7,12 +8,21 @@ import { ElectronicInformation } from "../../models/models";
   styleUrls: ["./view-past-electronic.component.css"],
 })
 export class ViewPastElectronicComponent implements OnInit {
-  
-  electronicInfoList : ElectronicInformation [] = new Array();
-  
-  constructor() {}
+  electronicInfoList: ElectronicInformation[] = new Array();
 
-  ngOnInit() {}
+  constructor(private electronicServiceService: ElectronicServiceService) {}
 
-  fetchData() {}
+  ngOnInit() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    this.electronicServiceService
+      .getElectronicInformations()
+      .subscribe((dataList) => {
+        for (const key in dataList) {
+          this.electronicInfoList.push(dataList[key]);
+        }
+      });
+  }
 }
