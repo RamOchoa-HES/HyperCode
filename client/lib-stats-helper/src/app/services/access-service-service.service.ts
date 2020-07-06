@@ -11,7 +11,7 @@ export class AccessServiceServiceService {
 
   constructor(private http: HttpClient) {}
 
-  getAccessService() {
+  getAccessServices() {
     let accessServiceGetAllUrl = this.baseUrl + "/api/accessServices";
 
     return this.http.get(accessServiceGetAllUrl);

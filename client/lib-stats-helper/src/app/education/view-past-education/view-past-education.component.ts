@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, OnChanges } from "@angular/core";
+import { Component, OnInit, OnChanges } from "@angular/core";
 import { EducationService } from "../../models/models";
+import { EducationServiceService } from "../../services/education-service.service";
 
 @Component({
   selector: "app-view-past-education",
@@ -9,13 +10,21 @@ import { EducationService } from "../../models/models";
 export class ViewPastEducationComponent implements OnInit, OnChanges {
   educationServiceList: EducationService[] = new Array();
 
-  constructor() {}
+  constructor(private educationServiceService: EducationServiceService) {}
 
   ngOnInit() {
+    this.fetchData();
   }
 
   ngOnChanges() {}
 
-  fetchData(){
+  fetchData() {
+    this.educationServiceService
+      .getEducationServices()
+      .subscribe((dataList) => {
+        for (const key in dataList) {
+          this.educationServiceList.push(dataList[key]);
+        }
+      });
   }
 }

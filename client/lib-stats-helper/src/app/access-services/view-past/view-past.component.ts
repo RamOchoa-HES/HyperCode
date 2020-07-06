@@ -17,7 +17,7 @@ export class ViewPastComponent implements OnInit {
   }
 
   fetchData() {
-    this.accessServiceService.getAccessService().subscribe((dataList) => {
+    this.accessServiceService.getAccessServices().subscribe((dataList) => {
       for (const key in dataList) {
         this.accessServiceList.push(dataList[key]);
       }

@@ -14,7 +14,7 @@ public class ERCMarketingController {
     @Autowired
     ERCMarketingService service;
 
-    @GetMapping("/ercMarkings")
+    @GetMapping("/ercMarketings")
     public List<ERCMarketing> getAllERCMarketing(){
         return service.getAllERCMarketing();
     }

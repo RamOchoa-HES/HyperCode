@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { EducationService, Months } from "../../models/models";
+import { EducationServiceService } from "../../services/education-service.service";
 
 @Component({
   selector: "app-add-new-education",
@@ -16,12 +17,17 @@ export class AddNewEducationComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private educationServiceService: EducationServiceService) {}
 
   ngOnInit() {}
 
   addEducationalService() {
     console.log("from edu ", this.educationService);
+    this.educationServiceService
+      .createEducationService(this.educationService)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   isInvalid() {
