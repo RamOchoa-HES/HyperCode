@@ -2,7 +2,7 @@
   <a class="navbar-brand" routerLink="home">Regina Library</a>
   <div class="ml-auto">
     <ul class="navbar-nav nav1">
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -23,7 +23,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -44,7 +44,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -65,7 +65,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -86,7 +86,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -107,7 +107,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -128,7 +128,7 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" *ngIf="loggedIn">
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -149,11 +149,21 @@
           >
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="loggedIn">
         <a class="nav-link" routerLink="yearly">Annual Statistics</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="logout"><Strong>Log Out</Strong></a>
+      <li class="nav-item" *ngIf="loggedIn">
+        <a class="nav-link" routerLink="logout" (click)="toggleLogIn()"
+          ><Strong>Log Out</Strong></a
+        >
+      </li>
+      <li class="nav-item" *ngIf="!loggedIn">
+        <a class="nav-link" routerLink="register"><Strong>Register</Strong></a>
+      </li>
+      <li class="nav-item" *ngIf="!loggedIn">
+        <a class="nav-link" routerLink="login" (click)="toggleLogIn()"
+          ><Strong>Log In</Strong></a
+        >
       </li>
     </ul>
   </div>

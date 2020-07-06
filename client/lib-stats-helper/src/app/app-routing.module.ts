@@ -55,8 +55,8 @@ export const routes: Routes = [
   { path: "electronic/view", component: ViewPastElectronicComponent },
   { path: "electronic", component: ElectronicComponent },
   { path: "yearly", component: YearlyStatComponent },
-  { path: "login", component: LoginComponent },
-  { path: "logout", component: LogOutComponent },
+  { path: "login", component: HomeComponent },
+  { path: "logout", component: HomeComponent },
   { path: "register", component: RegisterUserComponent },
 ];
 
