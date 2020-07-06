@@ -1,0 +1,6 @@
+applications:
+  - name: LibStatsHelper
+    memory: 768M
+    instances: 1
+    buildpacks:
+      - staticfile_buildpack
