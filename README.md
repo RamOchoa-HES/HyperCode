@@ -6,6 +6,7 @@
 - Ram Ochoa - Scrum Master
 - Tofik Mussa - Developer
 - Jeffrey Winning - Developer
+- Emmanuel Lingom
 - Kristen Rutherford - Developer
 
 #### Our far vision
