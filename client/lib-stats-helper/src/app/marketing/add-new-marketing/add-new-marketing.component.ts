@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ERCMarketing, Months } from "../../models/models";
+import { ErcMarketingService } from "../../services/erc-marketing.service";
 
 @Component({
   selector: "app-add-new-marketing",
@@ -16,12 +17,17 @@ export class AddNewMarketingComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private ercMarketingService: ErcMarketingService) {}
 
   ngOnInit() {}
 
   addERCMarketing() {
     console.log("ERC Mark ", this.ercMarketing);
+    this.ercMarketingService
+      .createErcMarketing(this.ercMarketing)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   isInvalid() {
