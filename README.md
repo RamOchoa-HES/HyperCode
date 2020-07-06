@@ -31,8 +31,6 @@
 
 We prioritized our backlog items based on need and dependencies in the following order:
 
-*Note: The first three lists on the Trello Board are for the Product Backlog only. The technical lists are only for our team internal tasks. The team decided to keep all lists within the same board.*
-
 1.  Design wireframes
 2.  Create Landing Page
 3.  Create Login Page
@@ -62,6 +60,13 @@ https://trello.com/b/MKYrschO/hypercode
 3. Estimated points are clearly displayed in the title after meeting with Dev Team, Product Owner, and Scrum Master and agreed upon by all.
 4. Product backlog item has dependencies defined and have a status of completed.
 5. There is at least one team member assigned to the backlog item.
+
+#### Definition of Done
+
+1. Primary stakeholder has accepted finished design
+2. Code is completed
+3. Code was unit tested and approved
+4. Code has been deployed to production and  stakeholder was informed
 
 #### Goals for Sprint 1
 
