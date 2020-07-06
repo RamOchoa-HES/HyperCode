@@ -89,3 +89,45 @@ https://docs.google.com/spreadsheets/d/1q-lSS1-0E6wuEgTwJVKs6vJMZfvSc5OaFhOEEzCr
 #### To join our slack channel, visit
 
 https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
+
+#### Daily Scrum Evidence
+
+July 3rd
+
+Jeffrey Winning   
+past day: created server droplet on digital ocean and set up environment with Java and MySQL
+2:31
+next day: will work with team to integrate Front end with Back end
+German Guzman   
+past day:
+•	Continue working on the back-end for the access services (CRUD). Tofik and Jeff have helped me troubleshoot issues I have encountered.
+•	I asked Richard if he could please take a look at our current Trello Board for feedback.
+next day:
+•	Testing access services database. and start building back-end for the other screens.
+•	Work with Tofik and Jeff to connect back-end with front-end.
+(edited)
+Tofik Mussa   
+Yesterday - worked on finializing the remaining pages in the front and creating entities in the back. Also worked on connecting to DB
+12:51
+Today - will work on front to back integration and deployment
+
+Ram Ochoa   
+I have the login page functioning. I still need to connect it to the backend in the next sprint. Next: I will discuss with the team if we want to have users save their info for login in the next sprint. Also, I will look at the rubric to see what I need to submit in the morning. (edited)
+
+Emmanuel
+Preparing for Sprint Planning
+ In the last meeting we stood on the plan that:
+-German was completing wireframes and he has made a post on that work in Slack.
+-Tofik was to create the landing page.
+Ramiro was supposed to create a log in page and he has posted a Template for the log in page
+Kristen was to take on the burndown chart
+I think Jeff was working on something that I am missing here. Please what was that ?
+12:02
+German has posted on wireframes in Slack. Let’s revise and see what can be added or done to complete and ship this task.
+Tofik has surely delivered on the landing page. How can we examine and accept his work on this aspect?
+-Ramiro has posted a Template for the log in page. What to expect so that this can be shipped?
+-I do not have news about Kristen on the burndown Chart. Any news?
+What was Jeff working on and at what level are we on that aspect?
+
+Kristin
+Initial analysis on how to create a Burndown Chart
