@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { InterLibraryLoan, Months } from "../../models/models";
+import { InterlibraryServiceService } from "../../services/interlibrary-service.service";
 
 @Component({
   selector: "app-add-new-interlibrary",
@@ -16,7 +17,7 @@ export class AddNewInterlibraryComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private interLibraryService: InterlibraryServiceService) {}
 
   ngOnInit() {}
 
@@ -63,6 +64,11 @@ export class AddNewInterlibraryComponent implements OnInit {
   }
 
   addInterLibraryLoan() {
+    this.interLibraryService
+      .createInterLibraryLoan(this.interLibraryLoan)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   selectedMonth1Func(value) {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { TechincalService, Months } from "src/app/models/models";
+import { TechnicalServiceService } from "../../services/technical-service.service";
 
 @Component({
   selector: "app-add-new-technical",
@@ -16,7 +17,7 @@ export class AddNewTechnicalComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private technicalServiceService: TechnicalServiceService) {}
 
   ngOnInit() {}
 
@@ -53,6 +54,11 @@ export class AddNewTechnicalComponent implements OnInit {
   }
 
   addTechnicalService() {
+    this.technicalServiceService
+      .createTechnicalService(this.techincalService)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   selectedMonth1Func(value) {
