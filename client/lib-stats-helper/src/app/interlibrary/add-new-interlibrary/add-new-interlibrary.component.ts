@@ -63,7 +63,6 @@ export class AddNewInterlibraryComponent implements OnInit {
   }
 
   addInterLibraryLoan() {
-    console.log("interlibrary ", this.interLibraryLoan);
   }
 
   selectedMonth1Func(value) {

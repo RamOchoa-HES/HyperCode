@@ -22,7 +22,6 @@ export class AddNewMarketingComponent implements OnInit {
   ngOnInit() {}
 
   addERCMarketing() {
-    console.log("ERC Mark ", this.ercMarketing);
     this.ercMarketingService
       .createErcMarketing(this.ercMarketing)
       .subscribe((data) => {

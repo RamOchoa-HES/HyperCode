@@ -53,7 +53,6 @@ export class AddNewTechnicalComponent implements OnInit {
   }
 
   addTechnicalService() {
-    console.log("technical ", this.techincalService);
   }
 
   selectedMonth1Func(value) {

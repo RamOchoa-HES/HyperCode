@@ -22,7 +22,6 @@ export class AddNewEducationComponent implements OnInit {
   ngOnInit() {}
 
   addEducationalService() {
-    console.log("from edu ", this.educationService);
     this.educationServiceService
       .createEducationService(this.educationService)
       .subscribe((data) => {

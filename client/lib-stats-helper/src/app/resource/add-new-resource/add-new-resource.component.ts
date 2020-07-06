@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ResearchInstruction, Months } from "../../models/models";
+import { ResearchService } from "../../services/research.service";
 
 @Component({
   selector: "app-add-new-resource",
@@ -16,7 +17,7 @@ export class AddNewResourceComponent implements OnInit {
   selectedMonth3: any = null;
   selectedMonth4: any = null;
 
-  constructor() {}
+  constructor(private researchService: ResearchService) {}
 
   ngOnInit() {}
 
@@ -33,7 +34,11 @@ export class AddNewResourceComponent implements OnInit {
   }
 
   addResearchInstruction() {
-    console.log("research ", this.researchInstruction);
+    this.researchService
+      .createResearchInstructionService(this.researchInstruction)
+      .subscribe((data) => {
+        console.log("posted ", data);
+      });
   }
 
   selectedMonth1Func(value) {

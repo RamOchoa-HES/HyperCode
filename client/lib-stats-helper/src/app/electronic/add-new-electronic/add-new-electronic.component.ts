@@ -21,7 +21,7 @@ export class AddNewElectronicComponent implements OnInit {
   ngOnInit() {}
 
   addElectronicInfo() {
-    console.log("electronic ", this.electronicInfo);
+
   }
 
   isInvalid() {
