@@ -6,6 +6,7 @@
 - Ram Ochoa - Scrum Master
 - Tofik Mussa - Developer
 - Jeffrey Winning - Developer
+- Emmanuel Lingom
 - Kristen Rutherford - Developer
 
 #### Our far vision
@@ -131,3 +132,45 @@ What was Jeff working on and at what level are we on that aspect?
 
 Kristin
 Initial analysis on how to create a Burndown Chart
+
+#### Peer Mob Evidence
+
+https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
+
+#### Sprint Review 1
+
+We met with our stake holder Samantha on 7/6/2020
+We showed her our increments in regards to the Access Services Pages (input and output) as well as the access to the login page.
+
+https://libstatshelperclient.cfapps.io/
+https://hypercode.cfapps.io/api/accessServices
+
+#### Stakeholder evidence of being in Sprint Review
+
+
+Cabral, Samantha
+2:15 PM (1 minute ago)
+to me
+
+Thanks, German.
+
+The project is really coming along and looks great!
+
+Samantha
+
+Samantha E. Cabral
+
+Assistant Director
+Regina Library
+
+Rivier University
+
+(603) 897-8536
+
+
+
+TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
+
+
+
+Strengths: Individualization | Relator | Responsibility | Context | Empathy
