@@ -104,11 +104,12 @@ https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFN
 
 July 3rd
 
-Jeffrey Winning   
+###### Jeffrey Winning   
 past day: created server droplet on digital ocean and set up environment with Java and MySQL
 2:31
 next day: will work with team to integrate Front end with Back end
-German Guzman   
+
+###### German Guzman   
 past day:
 •	Continue working on the back-end for the access services (CRUD). Tofik and Jeff have helped me troubleshoot issues I have encountered.
 •	I asked Richard if he could please take a look at our current Trello Board for feedback.
@@ -116,15 +117,16 @@ next day:
 •	Testing access services database. and start building back-end for the other screens.
 •	Work with Tofik and Jeff to connect back-end with front-end.
 (edited)
-Tofik Mussa   
+
+###### Tofik Mussa   
 Yesterday - worked on finializing the remaining pages in the front and creating entities in the back. Also worked on connecting to DB
 12:51
 Today - will work on front to back integration and deployment
 
-Ram Ochoa   
+###### Ram Ochoa   
 I have the login page functioning. I still need to connect it to the backend in the next sprint. Next: I will discuss with the team if we want to have users save their info for login in the next sprint. Also, I will look at the rubric to see what I need to submit in the morning. (edited)
 
-Emmanuel
+###### Emmanuel
 Preparing for Sprint Planning
  In the last meeting we stood on the plan that:
 -German was completing wireframes and he has made a post on that work in Slack.
@@ -139,14 +141,10 @@ Tofik has surely delivered on the landing page. How can we examine and accept hi
 -I do not have news about Kristen on the burndown Chart. Any news?
 What was Jeff working on and at what level are we on that aspect?
 
-Kristin
+###### Kristen
 Initial analysis on how to create a Burndown Chart
 
-Criteria 9
-
- 
-
-German
+###### German
 
 Worked with Tofik and Jeff on connecting the backend with the front end and preparing environment to go to production.
 
@@ -155,68 +153,44 @@ Coordinate with Samantha to have our Sprint Review.
 Worked on burdown Chart
 
  
-
-Toffik
+###### Tofik
 
 Worked with Toffik and Jeff on connecting the backend with the front end and preparing environment to go to production.
 
- 
+###### Jeff
 
-Jeff
+Primarily doing pair- or mob-programming with Tofik and German, I did work on all aspects of the Back End of the application. This included adding features and JUnit tests to the Spring Boot application, creating routes for the REST API which will link Front End & Back End, creating a MySQL database, and setting up a server first on DigitalOcean and then on Cloud Foundry.
 
-Primarily doing pair- or mob-programming with Tofik and German, I did work on all aspects of the Back End of the application. This included adding features and JUnit tests to the Spring Boot application, creating routes for the REST API which will link Front End & Back End, creating a MySQL database, and setting up a server first on DigitalOcean and then on CloudForge.
-
- 
-
-Ram
+###### Ram
 
 Yesterday: I have the login page functioning. I still need to connect it to the backend in the next sprint.
 
  
-
-Emmanuel
+###### Emmanuel
 
 I went over our daily stand up and was able to share with the team on a word document our update on the sprint four ceremonies.
 
- 
-
-Criteria 10
-
- 
-
-German
+###### German
 
 Working on a seeder for the database so we do not have to enter the initial data manually.
 
- 
-
-Ram
+###### Ram
 
 Today: I will begin connecting the login page with the database. Impediments: None as of yet.
 
- 
-
-Tofik
+##### Tofik
 
 Reviewing and making sure deployment to production is good.
 
- 
-
-Jeff
+##### Jeff
 
 I will work with team to finalize and troubleshoot Front End/Back End integration and deployment of the application to the server
 
- 
-
-Emmanuel
+##### Emmanuel
 
 Help the team with insight on sprint review and sprint retrospective during our upcoming meeting
 
- 
-
-Criteria 11
-
- 
+#### Impediments
 
 Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
 
@@ -242,7 +216,7 @@ https://hypercode.cfapps.io/api/accessServices
 
 #### Stakeholder evidence of being in Sprint Review
 
-Video Sprint Retrospective
+#### Video Sprint Retrospective
 https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSUFZwegN7QTNLZ4-6SCtN6Deq5VBPCmCop5?continueMode=true&_x_zm_rtaid=dIUMqvLURru6cFwvdrpEOg.1594133498896.f9bab1939cbf469406c110ffa5ec71d0&_x_zm_rhtaid=847
 
 Cabral, Samantha
