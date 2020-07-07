@@ -135,7 +135,11 @@ Initial analysis on how to create a Burndown Chart
 
 #### Peer Mob Evidence
 
+Picture:
 https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
+
+Video:
+https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hvlf0OHW23UhZQTe2Qts
 
 #### Sprint Review 1
 
@@ -147,6 +151,8 @@ https://hypercode.cfapps.io/api/accessServices
 
 #### Stakeholder evidence of being in Sprint Review
 
+Video Sprint Retrospective
+https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSUFZwegN7QTNLZ4-6SCtN6Deq5VBPCmCop5?continueMode=true&_x_zm_rtaid=dIUMqvLURru6cFwvdrpEOg.1594133498896.f9bab1939cbf469406c110ffa5ec71d0&_x_zm_rhtaid=847
 
 Cabral, Samantha
 2:15 PM (1 minute ago)
