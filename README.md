@@ -214,12 +214,9 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 https://libstatshelperclient.cfapps.io/
 
-
 https://hypercode.cfapps.io/api/accessServices
 
-#### Stakeholder evidence of being in Sprint Review
-
-#### Video Sprint Retrospective
+Video
 https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSUFZwegN7QTNLZ4-6SCtN6Deq5VBPCmCop5?continueMode=true&_x_zm_rtaid=dIUMqvLURru6cFwvdrpEOg.1594133498896.f9bab1939cbf469406c110ffa5ec71d0&_x_zm_rhtaid=847
 
 * Cabral, Samantha 2:15 PM (1 minute ago) to me
@@ -246,3 +243,8 @@ https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSU
 
 
 + Strengths: Individualization | Relator | Responsibility | Context | Empathy
+
+
+#### Stakeholder evidence of being in Sprint Review
+
+#### Video Sprint Retrospective
