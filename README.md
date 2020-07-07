@@ -201,10 +201,12 @@ Issues with initial Production server (Digital ocean). We need to change it to c
 Picture:
 https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
 
-Video1:
+
+* Mobbing Evidence - 3 team members were able to attend. One team member is not familiar with coding so helped with documentation and scrum events.
+One of our developers was not able to attend the mobbing session due to personal issues
 https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hvlf0OHW23UhZQTe2Qts
 
-Video2:
+* Pairing Evidence - 2 team members pairing
 https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyRSYwGjYrUaZOtU_Hb_x-_njxKB8rsv7mp9?continueMode=true
 
 #### Sprint Review 1
@@ -216,35 +218,36 @@ https://libstatshelperclient.cfapps.io/
 
 https://hypercode.cfapps.io/api/accessServices
 
-Video
+#### Our Sprint Review and Sprint Retrospective
+
+We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
+
 https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSUFZwegN7QTNLZ4-6SCtN6Deq5VBPCmCop5?continueMode=true&_x_zm_rtaid=dIUMqvLURru6cFwvdrpEOg.1594133498896.f9bab1939cbf469406c110ffa5ec71d0&_x_zm_rhtaid=847
 
-* Cabral, Samantha 2:15 PM (1 minute ago) to me
+#### Our stakeholder also wrote us an email after reviewing the application
 
-+ Thanks, German.
+<blockquote>
+Cabral, Samantha 2:15 PM (1 minute ago) to me
 
-+ The project is really coming along and looks great!
+Thanks, German.
 
-+ Samantha
+The project is really coming along and looks great!
 
-+ Samantha E. Cabral
+Samantha
 
-+ Assistant Director
-+ Regina Library
+Samantha E. Cabral
 
-+ Rivier University
+Assistant Director
+Regina Library
 
-+ (603) 897-8536
+Rivier University
 
-
-
-+ TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
-
+(603) 897-8536
 
 
-+ Strengths: Individualization | Relator | Responsibility | Context | Empathy
+
+TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
 
 
-#### Stakeholder evidence of being in Sprint Review
-
-#### Video Sprint Retrospective
+Strengths: Individualization | Relator | Responsibility | Context | Empathy
+</blockquote>
