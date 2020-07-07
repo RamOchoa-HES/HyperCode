@@ -142,6 +142,86 @@ What was Jeff working on and at what level are we on that aspect?
 Kristin
 Initial analysis on how to create a Burndown Chart
 
+Criteria 9
+
+ 
+
+German
+
+Worked with Tofik and Jeff on connecting the backend with the front end and preparing environment to go to production.
+
+Coordinate with Samantha to have our Sprint Review.
+
+Worked on burdown Chart
+
+ 
+
+Toffik
+
+Worked with Toffik and Jeff on connecting the backend with the front end and preparing environment to go to production.
+
+ 
+
+Jeff
+
+Primarily doing pair- or mob-programming with Tofik and German, I did work on all aspects of the Back End of the application. This included adding features and JUnit tests to the Spring Boot application, creating routes for the REST API which will link Front End & Back End, creating a MySQL database, and setting up a server first on DigitalOcean and then on CloudForge.
+
+ 
+
+Ram
+
+Yesterday: I have the login page functioning. I still need to connect it to the backend in the next sprint.
+
+ 
+
+Emmanuel
+
+I went over our daily stand up and was able to share with the team on a word document our update on the sprint four ceremonies.
+
+ 
+
+Criteria 10
+
+ 
+
+German
+
+Working on a seeder for the database so we do not have to enter the initial data manually.
+
+ 
+
+Ram
+
+Today: I will begin connecting the login page with the database. Impediments: None as of yet.
+
+ 
+
+Tofik
+
+Reviewing and making sure deployment to production is good.
+
+ 
+
+Jeff
+
+I will work with team to finalize and troubleshoot Front End/Back End integration and deployment of the application to the server
+
+ 
+
+Emmanuel
+
+Help the team with insight on sprint review and sprint retrospective during our upcoming meeting
+
+ 
+
+Criteria 11
+
+ 
+
+Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
+
+ 
+
 #### Peer Mob Evidence
 
 Picture:
