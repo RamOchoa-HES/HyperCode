@@ -217,9 +217,10 @@ https://libstatshelperclient.cfapps.io/
 
 https://hypercode.cfapps.io/api/accessServices
 
-#### Stakeholder evidence of being in Sprint Review
+#### Our Sprint Review and Sprint Retrospective
 
-#### Video Sprint Retrospective
+We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
+
 https://harvard.zoom.us/rec/play/6Zd7ce6r-m83S4bAsgSDCv4sW460Lays0CYdrPQKxBnjUSUFZwegN7QTNLZ4-6SCtN6Deq5VBPCmCop5?continueMode=true&_x_zm_rtaid=dIUMqvLURru6cFwvdrpEOg.1594133498896.f9bab1939cbf469406c110ffa5ec71d0&_x_zm_rhtaid=847
 
 <blockquote>
