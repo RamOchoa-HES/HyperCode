@@ -202,11 +202,11 @@ Picture:
 https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
 
 
-Mobbing Evidence - 3 team members were able to attend. One team member is not familiar with coding so helped with documentation and scrum events.
+* Mobbing Evidence - 3 team members were able to attend. One team member is not familiar with coding so helped with documentation and scrum events.
 One of our developers was not able to attend the mobbing session due to personal issues
 https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hvlf0OHW23UhZQTe2Qts
 
-Pairing Evidence - 2 team members pairing
+* Pairing Evidence - 2 team members pairing
 https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyRSYwGjYrUaZOtU_Hb_x-_njxKB8rsv7mp9?continueMode=true
 
 #### Sprint Review 1
