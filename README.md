@@ -152,7 +152,7 @@ Coordinate with Samantha to have our Sprint Review.
 
 Worked on burdown Chart
 
- 
+
 ###### Tofik
 
 Worked with Toffik and Jeff on connecting the backend with the front end and preparing environment to go to production.
@@ -165,7 +165,7 @@ Primarily doing pair- or mob-programming with Tofik and German, I did work on al
 
 Yesterday: I have the login page functioning. I still need to connect it to the backend in the next sprint.
 
- 
+
 ###### Emmanuel
 
 I went over our daily stand up and was able to share with the team on a word document our update on the sprint four ceremonies.
@@ -194,15 +194,18 @@ Help the team with insight on sprint review and sprint retrospective during our 
 
 Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
 
- 
+
 
 #### Peer Mob Evidence
 
 Picture:
 https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
 
-Video:
+Video1:
 https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hvlf0OHW23UhZQTe2Qts
+
+Video2:
+https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyRSYwGjYrUaZOtU_Hb_x-_njxKB8rsv7mp9?continueMode=true
 
 #### Sprint Review 1
 
