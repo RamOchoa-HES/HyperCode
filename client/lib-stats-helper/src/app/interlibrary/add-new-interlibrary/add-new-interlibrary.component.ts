@@ -68,6 +68,7 @@ export class AddNewInterlibraryComponent implements OnInit {
       .createInterLibraryLoan(this.interLibraryLoan)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

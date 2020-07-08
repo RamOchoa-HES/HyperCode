@@ -58,6 +58,7 @@ export class AddNewTechnicalComponent implements OnInit {
       .createTechnicalService(this.techincalService)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

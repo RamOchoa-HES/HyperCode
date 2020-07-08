@@ -26,6 +26,7 @@ export class AddNewEducationComponent implements OnInit {
       .createEducationService(this.educationService)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

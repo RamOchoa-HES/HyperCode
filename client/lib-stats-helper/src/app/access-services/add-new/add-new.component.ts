@@ -60,6 +60,7 @@ export class AddNewComponent implements OnInit {
       .createAccessService(this.accessService)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

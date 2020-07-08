@@ -26,6 +26,7 @@ export class AddNewElectronicComponent implements OnInit {
       .createElectronicInfo(this.electronicInfo)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

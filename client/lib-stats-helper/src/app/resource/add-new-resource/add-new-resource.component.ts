@@ -38,6 +38,7 @@ export class AddNewResourceComponent implements OnInit {
       .createResearchInstructionService(this.researchInstruction)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 
