@@ -8,14 +8,10 @@ import { ResearchService } from "../../services/research.service";
   styleUrls: ["./add-new-resource.component.css"],
 })
 export class AddNewResourceComponent implements OnInit {
+  
   researchInstruction: ResearchInstruction = new ResearchInstruction();
 
   monthList = Months;
-
-  selectedMonth1: any = null;
-  selectedMonth2: any = null;
-  selectedMonth3: any = null;
-  selectedMonth4: any = null;
 
   constructor(private researchService: ResearchService) {}
 
@@ -41,26 +37,9 @@ export class AddNewResourceComponent implements OnInit {
         alert("Congratulations! Your changes have been saved");
       });
   }
-
-  selectedMonth1Func(value) {
-    this.selectedMonth1 = value;
-    this.researchInstruction.patreonMonth1Name = this.selectedMonth1;
+  reset() {
+      this.researchInstruction.isCorrect = false;
+      this.researchInstruction.year = 0;
+      this.researchInstruction.semester = "";
   }
-
-  selectedMonth2Func(value) {
-    this.selectedMonth2 = value;
-    this.researchInstruction.patreonMonth2Name = this.selectedMonth2;
-  }
-
-  selectedMonth3Func(value) {
-    this.selectedMonth3 = value;
-    this.researchInstruction.patreonMonth3Name = this.selectedMonth3;
-  }
-
-  selectedMonth4Func(value) {
-    this.selectedMonth4 = value;
-    this.researchInstruction.patreonMonth4Name = this.selectedMonth4;
-  }
-
-  reset() {}
 }
