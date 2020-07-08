@@ -19,7 +19,7 @@ public class TechnicalServiceController {
         return service.getAllTechnicalServices();
     }
 
-    @PostMapping("/technicalService")
+    @PostMapping("/technicalServices")
     public TechnicalService createTechnicalService(@RequestBody TechnicalService technicalService){
         return service.createTechnicalService(technicalService);
     }

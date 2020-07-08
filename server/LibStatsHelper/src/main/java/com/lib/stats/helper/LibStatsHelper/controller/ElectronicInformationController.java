@@ -19,7 +19,7 @@ public class ElectronicInformationController {
         return service.getAllElectronicInformation();
     }
 
-    @PostMapping("/electronicInformationService")
+    @PostMapping("/electronicInformationServices")
     public ElectronicInformation createElectronicInformation(@RequestBody ElectronicInformation electronicInformation){
         return service.createElectronicInformation(electronicInformation);
     }

@@ -19,7 +19,7 @@ public class ERCMarketingController {
         return service.getAllERCMarketing();
     }
 
-    @PostMapping("/ercMarketing")
+    @PostMapping("/ercMarketings")
     public ERCMarketing createERCMarketing(@RequestBody ERCMarketing ercMarketing){
         return service.createERCMarketing(ercMarketing);
     }
