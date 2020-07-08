@@ -85,7 +85,7 @@ public class LibStatsHelperApplication implements CommandLineRunner {
 
 		ReginaUser educationUser = new ReginaUser();
 		educationUser.setRole(educationService);
-		educationUser.setUsername("education");
+		educationUser.setUsername("marketing");
 		educationUser.setPassword("regina1808");
 		userRepository.save(educationUser);
 

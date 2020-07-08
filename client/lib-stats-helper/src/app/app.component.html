@@ -2,7 +2,10 @@
   <a class="navbar-brand" routerLink="home">Regina Library</a>
   <div class="ml-auto">
     <ul class="navbar-nav nav1">
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isAccessServiceRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -23,7 +26,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isERCRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -44,7 +50,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isResearchInstructionRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -65,7 +74,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isEduServiceRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -86,7 +98,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isInterLibraryRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -107,7 +122,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isTechnicalServiceRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -128,7 +146,10 @@
           >
         </div>
       </li>
-      <li class="nav-item dropdown" *ngIf="loggedIn">
+      <li
+        class="nav-item dropdown"
+        *ngIf="isLogggedIn() && (isAdminRole() || isElectronicInfoRole())"
+      >
         <a
           class="nav-link dropdown-toggle"
           id="navbarDropdown"
@@ -149,18 +170,20 @@
           >
         </div>
       </li>
-      <li class="nav-item" *ngIf="loggedIn">
+      <li class="nav-item" *ngIf="isLogggedIn()">
         <a class="nav-link" routerLink="yearly">Annual Statistics</a>
       </li>
-      <li class="nav-item" *ngIf="loggedIn">
-        <a class="nav-link" routerLink="logout" (click)="toggleLogIn()"
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLink="logout"
+          (click)="logOut()"
+          *ngIf="isLogggedIn()"
           ><Strong>Log Out</Strong></a
         >
       </li>
-      <li class="nav-item" *ngIf="!loggedIn">
-        <a class="nav-link" routerLink="login" (click)="toggleLogIn()"
-          ><Strong>Log In</Strong></a
-        >
+      <li class="nav-item" *ngIf="!loggedIn && !isLogggedIn()">
+        <a class="nav-link" routerLink="login"><Strong>Log In</Strong></a>
       </li>
     </ul>
   </div>

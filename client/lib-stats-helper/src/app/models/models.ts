@@ -165,7 +165,10 @@ export class ReginaUser {
   lastName: string;
 }
 
-export class ReginaRole {}
+export class ReginaRole {
+  roleId: number;
+  role: string;
+}
 
 export const Months = [
   "January",
