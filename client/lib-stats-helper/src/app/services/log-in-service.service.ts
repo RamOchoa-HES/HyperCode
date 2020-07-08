@@ -14,6 +14,7 @@ export class LogInServiceService {
 
   authenticate(username: string, password: string) {
     let logInUrl = `${this.baseUrl}/api/validateLogin`;
+    var authenticated = false;
 
     let reginaUser = {
       username: username,
@@ -39,8 +40,10 @@ export class LogInServiceService {
         sessionStorage.setItem("username", data.username);
         sessionStorage.setItem("role", data.role.role);
         sessionStorage.setItem("password", password);
+        authenticated = true;
         this.router.navigate(["home"]);
       });
+
+    return authenticated;
   }
-  
 }
