@@ -158,9 +158,6 @@
         >
       </li>
       <li class="nav-item" *ngIf="!loggedIn">
-        <a class="nav-link" routerLink="register"><Strong>Register</Strong></a>
-      </li>
-      <li class="nav-item" *ngIf="!loggedIn">
         <a class="nav-link" routerLink="login" (click)="toggleLogIn()"
           ><Strong>Log In</Strong></a
         >
@@ -168,4 +165,4 @@
     </ul>
   </div>
 </nav>
-<app-home></app-home>
+<router-outlet></router-outlet>

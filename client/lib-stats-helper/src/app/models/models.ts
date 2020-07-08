@@ -90,7 +90,7 @@ export class InterLibraryLoan {
   isCorrect: boolean;
 }
 
-export class ResearchInstruction{
+export class ResearchInstruction {
   year: number;
   semester: String;
   numOfLibraryInstructions: number;
@@ -129,7 +129,7 @@ export class ResearchInstruction{
   isCorrect: boolean;
 }
 
-export class ElectronicInformation{
+export class ElectronicInformation {
   year: number;
   semester: String;
   uniquePageViewsInASession: number;
@@ -154,6 +154,18 @@ export class ElectronicInformation{
   patreonMonth4Name: string;
   isCorrect: boolean;
 }
+
+export class ReginaUser {
+  userId: number;
+  username: string;
+  password: string;
+  email: string;
+  role: ReginaRole;
+  firstName: string;
+  lastName: string;
+}
+
+export class ReginaRole {}
 
 export const Months = [
   "January",

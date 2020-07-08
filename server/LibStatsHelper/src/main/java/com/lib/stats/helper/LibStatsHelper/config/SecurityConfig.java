@@ -32,16 +32,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
-                .antMatchers("/api/accessServices").hasAnyAuthority("ADMIN", "ACCESS_SERVICES")
-                .antMatchers("/api/ercMarketings").hasAnyAuthority("ADMIN", "ERC")
-                .antMatchers("/api/educationServices").hasAnyAuthority("ADMIN", "EDUCATION_SERVICE")
-                .antMatchers("/api/interLibraryLoans").hasAnyAuthority("ADMIN", "INTERLIBRARY")
-                .antMatchers("/api/researchInstructions").hasAnyAuthority("ADMIN", "RESEARCH_INSTRUCTION")
-                .antMatchers("/api/technicalServices").hasAnyAuthority("ADMIN", "TECHNICAL_SERVICE")
-                .antMatchers("/api/electronicInformationServices").hasAnyAuthority("ADMIN", "ELECTRONIC_INFORMATION")
-                .antMatchers("/**").permitAll()
+                .antMatchers("/api/accessServices/**").hasAnyAuthority("ADMIN", "ACCESS_SERVICES")
+                .antMatchers("/api/ercMarketings/**").hasAnyAuthority("ADMIN", "ERC")
+                .antMatchers("/api/educationServices/**").hasAnyAuthority("ADMIN", "EDUCATION_SERVICE")
+                .antMatchers("/api/interLibraryLoans/**").hasAnyAuthority("ADMIN", "INTERLIBRARY")
+                .antMatchers("/api/researchInstructions/**").hasAnyAuthority("ADMIN", "RESEARCH_INSTRUCTION")
+                .antMatchers("/api/technicalServices/**").hasAnyAuthority("ADMIN", "TECHNICAL_SERVICE")
+                .antMatchers("/api/electronicInformationServices/**").hasAnyAuthority("ADMIN", "ELECTRONIC_INFORMATION")
+                .antMatchers("/api/validateLogin/**").permitAll()
                 .anyRequest().authenticated()
-                .and().formLogin();
+                .and().formLogin()
+                .and().httpBasic();
+
+        httpSecurity.csrf().disable();
 
     }
 
