@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LogInServiceService } from "../services/log-in-service.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-login",
@@ -9,20 +10,32 @@ import { LogInServiceService } from "../services/log-in-service.service";
 export class LoginComponent implements OnInit {
   username = "";
   password = "";
+  authenticated = true;
 
-  constructor(private logInService: LogInServiceService) {}
+  constructor(
+    private logInService: LogInServiceService,
+    private router: Router
+  ) {}
 
   errorMessage = "";
 
   ngOnInit() {}
 
   logIn() {
-    let authenticated = this.logInService.authenticate(
-      this.username,
-      this.password
-    );
+    this.logInService
+      .authenticate(this.username, this.password)
+      .subscribe(
+        (data) => {
+          sessionStorage.setItem("username", data.username);
+          sessionStorage.setItem("role", data.role.role);
+          sessionStorage.setItem("password", this.password);
+          this.authenticated = true;
+          this.router.navigate(["home"]);
+        },
+        (err) => (this.authenticated = false)
+      );
 
-    if (!authenticated) {
+    if (!this.authenticated) {
       this.errorMessage = "Incorrect Username or Password";
     } else {
       this.errorMessage = "";
