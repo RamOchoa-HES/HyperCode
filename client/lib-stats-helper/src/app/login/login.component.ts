@@ -12,9 +12,20 @@ export class LoginComponent implements OnInit {
 
   constructor(private logInService: LogInServiceService) {}
 
+  errorMessage = "";
+
   ngOnInit() {}
 
   logIn() {
     this.logInService.authenticate(this.username, this.password);
+
+    let username = sessionStorage.getItem("username");
+    let password = sessionStorage.getItem("password");
+
+    if (!username || !password) {
+      this.errorMessage = "Incorrect Username or Password";
+    } else {
+      this.errorMessage = "";
+    }
   }
 }

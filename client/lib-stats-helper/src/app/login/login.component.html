@@ -1,5 +1,8 @@
 <form class="col-md-3 mx-auto mt-5">
   <div class="form-group mt-5">
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
     <label for="username">Username</label>
     <input
       type="text"
