@@ -42,4 +42,5 @@ export class LogInServiceService {
         this.router.navigate(["home"]);
       });
   }
+  
 }
