@@ -18,7 +18,7 @@ export class EducationServiceService {
   }
 
   createEducationService(educationService: EducationService) {
-    let EducationServiceGetAllUrl = this.baseUrl + "/api/educationService";
+    let EducationServiceGetAllUrl = this.baseUrl + "/api/educationServices";
 
     return this.http.post<EducationService>(EducationServiceGetAllUrl, educationService);
   }

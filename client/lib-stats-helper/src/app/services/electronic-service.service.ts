@@ -20,7 +20,7 @@ export class ElectronicServiceService {
 
   createElectronicInfo(electronicInformation: ElectronicInformation) {
     let electronicInformationCreateUrl =
-      this.baseUrl + "/api/electronicInformationService";
+      this.baseUrl + "/api/electronicInformationServices";
 
     return this.http.post<ElectronicInformation>(
       electronicInformationCreateUrl,

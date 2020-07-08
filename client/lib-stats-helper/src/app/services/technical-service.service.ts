@@ -18,7 +18,7 @@ export class TechnicalServiceService {
   }
 
   createTechnicalService(technicalService: TechincalService) {
-    let technicalServicGetAllUrl = this.baseUrl + "/api/technicalService";
+    let technicalServicGetAllUrl = this.baseUrl + "/api/technicalServices";
 
     return this.http.post<TechincalService>(
       technicalServicGetAllUrl,

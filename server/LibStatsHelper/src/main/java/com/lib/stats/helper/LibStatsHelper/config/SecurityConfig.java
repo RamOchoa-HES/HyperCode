@@ -31,7 +31,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.authorizeRequests()
+        httpSecurity.
+                csrf().disable().authorizeRequests()
                 .antMatchers("/api/accessServices/**").hasAnyAuthority("ADMIN", "ACCESS_SERVICES")
                 .antMatchers("/api/ercMarketings/**").hasAnyAuthority("ADMIN", "ERC")
                 .antMatchers("/api/educationServices/**").hasAnyAuthority("ADMIN", "EDUCATION_SERVICE")
@@ -43,8 +44,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and().formLogin()
                 .and().httpBasic();
-
-        httpSecurity.csrf().disable();
 
     }
 

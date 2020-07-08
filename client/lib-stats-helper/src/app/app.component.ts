@@ -22,6 +22,8 @@ export class AppComponent {
 
   logOut() {
     sessionStorage.removeItem("username");
+    sessionStorage.removeItem("password");
+    sessionStorage.removeItem("role");
     this.loggedIn = false;
   }
 

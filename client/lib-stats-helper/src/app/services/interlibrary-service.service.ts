@@ -18,7 +18,7 @@ export class InterlibraryServiceService {
   }
 
   createInterLibraryLoan(interLibraryLoan: InterLibraryLoan) {
-    let interLibraryLoanCreateUrl = this.baseUrl + "/api/interLibraryLoan";
+    let interLibraryLoanCreateUrl = this.baseUrl + "/api/interLibraryLoans";
 
     return this.http.post<InterLibraryLoan>(
       interLibraryLoanCreateUrl,

@@ -24,6 +24,12 @@ export class LogInServiceService {
       headers: new HttpHeaders({
         "Content-Type": "application/json",
         Authorization: "Basic " + btoa(username + ":" + password),
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods":
+          "GET, POST, PATCH, DELETE, PUT, OPTIONS",
+        "Access-Control-Allow-Headers":
+          "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
       }),
     };
 
@@ -32,6 +38,7 @@ export class LogInServiceService {
       .subscribe((data) => {
         sessionStorage.setItem("username", data.username);
         sessionStorage.setItem("role", data.role.role);
+        sessionStorage.setItem("password", password);
         this.router.navigate(["home"]);
       });
   }

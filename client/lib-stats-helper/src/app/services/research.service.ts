@@ -20,7 +20,7 @@ export class ResearchService {
 
   createResearchInstructionService(researchInstruction: ResearchInstruction) {
     let researchInstructionCreateUrl =
-      this.baseUrl + "/api/researchInstruction";
+      this.baseUrl + "/api/researchInstructions";
 
     return this.http.post<ResearchInstruction>(
       researchInstructionCreateUrl,

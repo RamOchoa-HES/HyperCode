@@ -19,7 +19,7 @@ export class ErcMarketingService {
   }
 
   createErcMarketing(ercMarketing: ERCMarketing) {
-    let eRCMarketingCreateUrl = this.baseUrl + "/api/ercMarketing";
+    let eRCMarketingCreateUrl = this.baseUrl + "/api/ercMarketings";
 
     return this.http.post<ERCMarketing>(eRCMarketingCreateUrl, ercMarketing);
   }
