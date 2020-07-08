@@ -13,7 +13,7 @@ export class AccessServiceServiceService {
   constructor(private http: HttpClient, private router: Router) {}
 
   getAccessServices() {
-    let accessServiceGetAllUrl = this.baseUrl + "/api/accessServices";
+    let accessServiceGetAllUrl = `${this.baseUrl}/api/accessServices`;
 
     let username = sessionStorage.getItem("username");
     let password = sessionStorage.getItem("password");
@@ -44,7 +44,6 @@ export class AccessServiceServiceService {
   createAccessService(accessService: AccessService) {
     let accessServiceGetAllUrl = this.baseUrl + "/api/accessServices";
 
-    
     let username = sessionStorage.getItem("username");
     let password = sessionStorage.getItem("password");
 
