@@ -300,6 +300,9 @@ We sent video for rehearsal and sprint review to teaching staff via Slack.
 
 Most of what needed to be done by the product owner is documented in these slide decks of his presentation. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
 
+### Sprint 2 Product Increment
+We completed a total of 17 points towards finishing up our product. We added CRUD functionality to the application and scaffolded our application  with authentication. The next step is to build visually attractive charts for reporting and analytics.
+
 #### Our Sprint Review and Sprint Retrospective
 
 We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
@@ -325,6 +328,7 @@ Regina Library
 Rivier University
 
 (603) 897-8536
+
 
 
 
