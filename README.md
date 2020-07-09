@@ -294,7 +294,7 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 #### Product Owner Final Notes
 
-Most of what needed to be done by the product owner is documented in these slide decks. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
+Most of what needed to be done by the product owner is documented in these slide decks of his presentation. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
 
 #### Our Sprint Review and Sprint Retrospective
 
