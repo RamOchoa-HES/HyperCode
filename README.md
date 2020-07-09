@@ -263,6 +263,8 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 * Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
 * Front end - https://libstatshelperclientnew.cfapps.io/#/home
 
+- Please use reginaadmin as username and regina1805 as password to log in and see content
+
 #### Sprint Review 1
 
 We met with our stake holder Samantha on 7/6/2020
@@ -270,6 +272,8 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 * Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
 * Front end - https://libstatshelperclientnew.cfapps.io/#/home
+
+- Please use reginaadmin as username and regina1805 as password to log in and see content
 
 #### Our Sprint Review and Sprint Retrospective
 
