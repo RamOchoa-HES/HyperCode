@@ -292,6 +292,10 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 - Please use reginaadmin as username and regina1805 as password to log in and see content
 
+#### Sprint 2 Review
+
+We sent video for rehearsal and sprint review to teaching staff via Slack.
+
 #### Product Owner Final Notes
 
 Most of what needed to be done by the product owner is documented in these slide decks of his presentation. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
