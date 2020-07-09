@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display library name', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to lib-stats-helper!');
+    expect(page.getTitleText()).toEqual('Regina Library');
   });
 
   afterEach(async () => {
