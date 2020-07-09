@@ -251,7 +251,7 @@ https://github.com/RamOchoa-HES/HyperCode/blob/master/logs.txt
 
 #### TDD/BDD
 
-* There are 11 unit tests in the server side with mockito and 9 unit tests on the client side with Karma/Jasmin
+* There are 11 unit tests in the server side with mockito and 10 unit tests on the client side with Karma/Jasmin
 * BDD directory - https://github.com/RamOchoa-HES/HyperCode/tree/master/client/lib-stats-helper/e2e/src
 
 #### Peer Mob Evidence Sprint 1
