@@ -1,5 +1,5 @@
 applications:
-  - name: LibStatsHelper
+  - name: LibStatsHelperServer
     memory: 768M
     instances: 1
     path: target\LibStatsHelper-0.0.1-SNAPSHOT.jar
