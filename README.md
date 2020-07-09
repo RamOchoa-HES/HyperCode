@@ -231,6 +231,10 @@ Yesterday: created basic TDD tests and pushed them to Github. Today: I will cont
 Yesterday: research for CI/CD and GitLab
 Tomorrow: helping with bugs
 
+#### Proof of CI/CD pipeline setup
+
+https://github.com/RamOchoa-HES/HyperCode/blob/master/logs.txt
+
 #### Peer Mob Evidence Sprint 1
 
 Picture:
