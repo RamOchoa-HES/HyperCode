@@ -105,10 +105,8 @@ Note: compared to our previous sprint, this sprint has an increased capacity due
 
 #### Burndown Chart
 
-Sprint 1
+Sprint 1 & 2
 https://docs.google.com/spreadsheets/d/1q-lSS1-0E6wuEgTwJVKs6vJMZfvSc5OaFhOEEzCr3Hg/edit?usp=sharing
-
-Sprint 2
 
 #### To join our slack channel, visit
 
