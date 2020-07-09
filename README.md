@@ -108,14 +108,13 @@ We used the poker game to assign points to our stories. Product owner asked the 
 
 #### Sprint 2 Forecast - Yesterday's Weather
 
-- Total points: 17 
+- Total points: 15
 
 Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%. All of our stories were big enough to be completed in one sprint and nothing more.
 
 * Access Services Editor UI - 5
 * Security & Authentication Back-end - 5
 * Advanced Login UI Front End - 5
-* Daily Scrum Check - 2 
 
 #### Burndown Chart
 
@@ -280,7 +279,7 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 
 #### Sprint 2 story completion 
 
-- All of the 17 points that we forecasted for the sprint were completed by development team members
+- All of the 15 points that we forecasted for the sprint were completed by development team members
 
 #### Sprint Review 1
 
