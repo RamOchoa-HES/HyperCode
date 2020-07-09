@@ -292,6 +292,10 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 - Please use reginaadmin as username and regina1805 as password to log in and see content
 
+#### Product Owner Final Notes
+
+Most of what needed to be done by the product owner is documented in these slide decks. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
+
 #### Our Sprint Review and Sprint Retrospective
 
 We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
