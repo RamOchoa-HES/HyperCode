@@ -231,10 +231,6 @@ Yesterday: created basic TDD tests and pushed them to Github. Today: I will cont
 Yesterday: research for CI/CD and GitLab
 Tomorrow: helping with bugs
 
-#### Proof of CI/CD pipeline setup
-
-https://github.com/RamOchoa-HES/HyperCode/blob/master/logs.txt
-
 #### Peer Mob Evidence Sprint 1
 
 Picture:
@@ -247,6 +243,10 @@ https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hv
 
 * Pairing Evidence - 2 team members pairing
 https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyRSYwGjYrUaZOtU_Hb_x-_njxKB8rsv7mp9?continueMode=true
+
+#### Peer/Mob Evidence July 8th Sprint 2
+
+https://docs.google.com/document/d/1-HQXQMbjg5LCBAydo4fG0N-eMWsNDXpg6lHzfCRi4g8/edit?usp=sharing
 
 #### Sprint Review 1
 
