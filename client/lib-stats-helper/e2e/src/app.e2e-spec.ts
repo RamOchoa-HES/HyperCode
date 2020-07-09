@@ -18,5 +18,4 @@ describe('workspace-project App', () => {
     expect(page.getLoginButton().getText()).toEqual('Log In');
   });
 
-
 });
