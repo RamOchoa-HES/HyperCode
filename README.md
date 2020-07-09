@@ -92,15 +92,27 @@ Points by story
 
 We used the poker game to assign points to our stories. Product owner asked the Development Team members to send via Zoom chat how many points a certain story would take to be completed (The range was 0, 0.5, 1,2,3,5,8,13,20,40,100, and infinity). After Product owner, received all chat messages, the product owner informed the team of the results highlighting the highest point and the lowest point. The product owner either went for a second or more  rounds of estimates or the team member compromised to agreed to a specific number (Ex: lowest was 1 and highest was 20. Team agreed on 5).
 
+#### Sprint 2 Forecast - Yesterday's Weather
+
+- Total points: 17 
+
+Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%
+
+* Access Services Editor UI - 5
+* Security & Authentication Back-end - 5
+* Advanced Login UI Front End - 5
+* Daily Scrum Check - 2 
+
 #### Burndown Chart
 
+Sprint 1 & 2
 https://docs.google.com/spreadsheets/d/1q-lSS1-0E6wuEgTwJVKs6vJMZfvSc5OaFhOEEzCr3Hg/edit?usp=sharing
 
 #### To join our slack channel, visit
 
 https://join.slack.com/t/team4-iix1947/shared_invite/zt-f8tltgh3-kyaaL6hfWy3KMFNXdoFjaQ
 
-#### Daily Scrum Evidence
+#### Daily Scrum Evidence Sprint 1
 
 July 3rd
 
@@ -194,9 +206,32 @@ Help the team with insight on sprint review and sprint retrospective during our 
 
 Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
 
+#### Daily Scrum Evidence Sprint 2 July 8
 
+#### Tofik Mussa  12:59 AM
+Status update - I was able to get authentication working in the back end this evening. I will continue working to integrate with the front end
 
-#### Peer Mob Evidence
+#### Rogerlingom2015  10:49 AM
+Status update, I basically just came here on this thread to see what each and everyone is posting. To check if anyone has expressed any impediments and if the group as a whole is moving forward. Please all let's keep posting what we got going on on this thread as what we have going on is actually part of the work we are doing as a team.
+
+#### Jeffrey Winning  11:14 AM
+Update: we have GitLab account and I know how to build the .yml file which defines the stages of testing and deployment. Impediment: the newest builds are not compiling on my home machine. I think it's an issue of intelliJ settings having trouble finding the JDK, so I presume once I figure out which setting is wrong it will be all set. If anyone has thoughts on the subject please share, or if anyone has same issue: when I try to run it is not recognizing the names of any Java classes. As soon as I get past this impediment I should have the project up on GitLab and we can have it run through its first CI pipeline
+
+#### German Guzman  12:07 PM
+Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI/CD as able.
+
+#### Ram Ochoa  3:09 PM
+Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the TDD and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
+3:09
+Screen Shot 2020-07-08 at 2.00.56 PM.png 
+Screen Shot 2020-07-08 at 2.00.56 PM.png
+Yesterday: created basic TDD tests and pushed them to Github. Today: I will continue working on testing, to create more elaborate tests, and push the BDD test to Github. While more testing is done the CD can be worked on for the tests in place. Tomorrow: I will join in the presenting of our project and the sprint retrospective. Impediments: None as of yet. (edited) 
+
+#### kristen  7:02 PM
+Yesterday: research for CI/CD and GitLab
+Tomorrow: helping with bugs
+
+#### Peer Mob Evidence Sprint 1
 
 Picture:
 https://drive.google.com/file/d/1Bm1CAWnDNng9O9bSZBSMMS_9797TW_e4/view?usp=sharing
