@@ -8,4 +8,10 @@ export class AppPage {
   getTitleText() {
     return element(by.css('app-root Strong')).getText() as Promise<string>;
   }
+
+  getLoginButton(){
+
+    return element(by.className('navbar-nav nav1'));
+    
+  }
 }
