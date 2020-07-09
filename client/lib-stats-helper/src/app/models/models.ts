@@ -25,14 +25,6 @@ export class EducationService {
   facebookFollowers: number;
   instagramFollowers: number;
   isCorrect: boolean;
-  patreonMonth1: number;
-  patreonMonth1Name: string;
-  patreonMonth2: number;
-  patreonMonth2Name: string;
-  patreonMonth3: number;
-  patreonMonth3Name: string;
-  patreonMonth4: number;
-  patreonMonth4Name: string;
 }
 
 export class ERCMarketing {
@@ -57,14 +49,6 @@ export class TechincalService {
   numberOfBooksDVDs: number;
   additionalItems: number;
   numberOfEbooks: number;
-  patreonMonth1: number;
-  patreonMonth1Name: string;
-  patreonMonth2: number;
-  patreonMonth2Name: string;
-  patreonMonth3: number;
-  patreonMonth3Name: string;
-  patreonMonth4: number;
-  patreonMonth4Name: string;
   isCorrect: boolean;
 }
 
@@ -79,18 +63,10 @@ export class InterLibraryLoan {
   docDeliveryAlreadyOwned: number;
   docDeliveryFoundFree: number;
   docDeliveryPurchased: number;
-  patreonMonth1: number;
-  patreonMonth1Name: string;
-  patreonMonth2: number;
-  patreonMonth2Name: string;
-  patreonMonth3: number;
-  patreonMonth3Name: string;
-  patreonMonth4: number;
-  patreonMonth4Name: string;
   isCorrect: boolean;
 }
 
-export class ResearchInstruction{
+export class ResearchInstruction {
   year: number;
   semester: String;
   numOfLibraryInstructions: number;
@@ -118,18 +94,10 @@ export class ResearchInstruction{
   unknown: number;
   onlineStudent: number;
   nonAffiliated: number;
-  patreonMonth1: number;
-  patreonMonth1Name: string;
-  patreonMonth2: number;
-  patreonMonth2Name: string;
-  patreonMonth3: number;
-  patreonMonth3Name: string;
-  patreonMonth4: number;
-  patreonMonth4Name: string;
   isCorrect: boolean;
 }
 
-export class ElectronicInformation{
+export class ElectronicInformation {
   year: number;
   semester: String;
   uniquePageViewsInASession: number;
@@ -144,15 +112,22 @@ export class ElectronicInformation{
   edsAbstract: number;
   ebooksUsed: number;
   streamVideosViewed: number;
-  patreonMonth1: number;
-  patreonMonth1Name: string;
-  patreonMonth2: number;
-  patreonMonth2Name: string;
-  patreonMonth3: number;
-  patreonMonth3Name: string;
-  patreonMonth4: number;
-  patreonMonth4Name: string;
   isCorrect: boolean;
+}
+
+export class ReginaUser {
+  userId: number;
+  username: string;
+  password: string;
+  email: string;
+  role: ReginaRole;
+  firstName: string;
+  lastName: string;
+}
+
+export class ReginaRole {
+  roleId: number;
+  role: string;
 }
 
 export const Months = [

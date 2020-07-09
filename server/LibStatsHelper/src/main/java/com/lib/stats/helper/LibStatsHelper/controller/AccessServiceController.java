@@ -38,12 +38,12 @@ public class AccessServiceController {
         return service.getAccessServicesByYear(year);
     }
 
-    @PostMapping("/accessService")
+    @PostMapping("/accessServices")
     public AccessService createAccessService(@RequestBody AccessService accessservice) {
         return service.saveAccessService(accessservice);
     }
 
-    @PostMapping("/accessServices")
+    @PostMapping("/accessServices/multiple")
     public List<AccessService> createAccessServices(@RequestBody List<AccessService> accessservices) {
         return service.saveAccessServices(accessservices);
     }

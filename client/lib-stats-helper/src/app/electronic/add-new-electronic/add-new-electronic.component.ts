@@ -8,14 +8,10 @@ import { ElectronicServiceService } from "../../services/electronic-service.serv
   styleUrls: ["./add-new-electronic.component.css"],
 })
 export class AddNewElectronicComponent implements OnInit {
+
   electronicInfo: ElectronicInformation = new ElectronicInformation();
 
   monthList = Months;
-
-  selectedMonth1: any = null;
-  selectedMonth2: any = null;
-  selectedMonth3: any = null;
-  selectedMonth4: any = null;
 
   constructor(private electronicServiceService: ElectronicServiceService) {}
 
@@ -26,6 +22,7 @@ export class AddNewElectronicComponent implements OnInit {
       .createElectronicInfo(this.electronicInfo)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 
@@ -56,35 +53,7 @@ export class AddNewElectronicComponent implements OnInit {
     this.electronicInfo.edsAbstract = 0;
     this.electronicInfo.ebooksUsed = 0;
     this.electronicInfo.streamVideosViewed = 0;
-    this.electronicInfo.patreonMonth1 = 0;
-    this.electronicInfo.patreonMonth1Name = "";
-    this.electronicInfo.patreonMonth2 = 0;
-    this.electronicInfo.patreonMonth2Name = "";
-    this.electronicInfo.patreonMonth3 = 0;
-    this.electronicInfo.patreonMonth3Name = "";
-    this.electronicInfo.patreonMonth4 = 0;
-    this.electronicInfo.patreonMonth4Name = "";
-
     this.electronicInfo.isCorrect = false;
   }
 
-  selectedMonth1Func(value) {
-    this.selectedMonth1 = value;
-    this.electronicInfo.patreonMonth1Name = this.selectedMonth1;
-  }
-
-  selectedMonth2Func(value) {
-    this.selectedMonth2 = value;
-    this.electronicInfo.patreonMonth2Name = this.selectedMonth2;
-  }
-
-  selectedMonth3Func(value) {
-    this.selectedMonth3 = value;
-    this.electronicInfo.patreonMonth3Name = this.selectedMonth3;
-  }
-
-  selectedMonth4Func(value) {
-    this.selectedMonth4 = value;
-    this.electronicInfo.patreonMonth4Name = this.selectedMonth4;
-  }
 }

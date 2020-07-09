@@ -19,7 +19,7 @@ public class EducationServiceController {
         return service.getAllEducationServices();
     }
 
-    @PostMapping("/educationService")
+    @PostMapping("/educationServices")
     public EducationService createEducationService(@RequestBody EducationService educationService){
         return service.createEducationService(educationService);
     }

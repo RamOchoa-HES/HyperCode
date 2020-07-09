@@ -19,7 +19,7 @@ public class ResearchInstructionController {
         return service.getAllResearchInstructions();
     }
 
-    @PostMapping("/researchInstruction")
+    @PostMapping("/researchInstructions")
     public ResearchInstruction createResearchInstruction(@RequestBody ResearchInstruction researchInstruction){
         return service.createResearchInstruction(researchInstruction);
     }

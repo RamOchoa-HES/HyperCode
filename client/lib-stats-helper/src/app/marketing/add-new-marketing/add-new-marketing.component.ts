@@ -26,6 +26,7 @@ export class AddNewMarketingComponent implements OnInit {
       .createErcMarketing(this.ercMarketing)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 

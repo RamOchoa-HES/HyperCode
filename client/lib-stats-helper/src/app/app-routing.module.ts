@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 
-import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { AccessServicesComponent } from "./access-services/access-services.component";
 import { EducationComponent } from "./education/education.component";
@@ -27,11 +26,9 @@ import { AddNewTechnicalComponent } from "./technical/add-new-technical/add-new-
 import { ViewPastTechnicalComponent } from "./technical/view-past-technical/view-past-technical.component";
 import { AddNewElectronicComponent } from "./electronic/add-new-electronic/add-new-electronic.component";
 import { ViewPastElectronicComponent } from "./electronic/view-past-electronic/view-past-electronic.component";
-import { LogOutComponent } from "./log-out/log-out.component";
-import { RegisterUserComponent } from "./register-user/register-user.component";
 
 export const routes: Routes = [
-  { path: "", component: AppComponent, pathMatch: "full" },
+  { path: "", component: HomeComponent, pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "access/add", component: AddNewComponent },
   { path: "access/view", component: ViewPastComponent },
@@ -55,9 +52,8 @@ export const routes: Routes = [
   { path: "electronic/view", component: ViewPastElectronicComponent },
   { path: "electronic", component: ElectronicComponent },
   { path: "yearly", component: YearlyStatComponent },
-  { path: "login", component: HomeComponent },
+  { path: "login", component: LoginComponent },
   { path: "logout", component: HomeComponent },
-  { path: "register", component: RegisterUserComponent },
 ];
 
 @NgModule({

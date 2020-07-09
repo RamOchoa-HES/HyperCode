@@ -19,7 +19,7 @@ public class InterLibraryLoanController {
         return service.getAllInterLibrayLoans();
     }
 
-    @PostMapping("/interLibraryLoan")
+    @PostMapping("/interLibraryLoans")
     public InterLibraryLoan createInterLibraryLoan(@RequestBody InterLibraryLoan interLibraryLoan){
         return service.createInterLibraryLoan(interLibraryLoan);
     }

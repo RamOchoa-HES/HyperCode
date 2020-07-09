@@ -8,14 +8,10 @@ import { EducationServiceService } from "../../services/education-service.servic
   styleUrls: ["./add-new-education.component.css"],
 })
 export class AddNewEducationComponent implements OnInit {
+  
   educationService: EducationService = new EducationService();
 
   monthList = Months;
-
-  selectedMonth1: any = null;
-  selectedMonth2: any = null;
-  selectedMonth3: any = null;
-  selectedMonth4: any = null;
 
   constructor(private educationServiceService: EducationServiceService) {}
 
@@ -26,6 +22,7 @@ export class AddNewEducationComponent implements OnInit {
       .createEducationService(this.educationService)
       .subscribe((data) => {
         console.log("posted ", data);
+        alert("Congratulations! Your changes have been saved");
       });
   }
 
@@ -55,33 +52,6 @@ export class AddNewEducationComponent implements OnInit {
     this.educationService.feedbackWallResponses = 0;
     this.educationService.facebookFollowers = 0;
     this.educationService.isCorrect = false;
-    this.educationService.patreonMonth1 = 0;
-    this.educationService.patreonMonth1Name = "";
-    this.educationService.patreonMonth2 = 0;
-    this.educationService.patreonMonth2Name = "";
-    this.educationService.patreonMonth3 = 0;
-    this.educationService.patreonMonth3Name = "";
-    this.educationService.patreonMonth4 = 0;
-    this.educationService.patreonMonth4Name = "";
   }
 
-  selectedMonth1Func(value) {
-    this.selectedMonth1 = value;
-    this.educationService.patreonMonth1Name = this.selectedMonth1;
-  }
-
-  selectedMonth2Func(value) {
-    this.selectedMonth2 = value;
-    this.educationService.patreonMonth2Name = this.selectedMonth2;
-  }
-
-  selectedMonth3Func(value) {
-    this.selectedMonth3 = value;
-    this.educationService.patreonMonth3Name = this.selectedMonth3;
-  }
-
-  selectedMonth4Func(value) {
-    this.selectedMonth4 = value;
-    this.educationService.patreonMonth4Name = this.selectedMonth4;
-  }
 }
