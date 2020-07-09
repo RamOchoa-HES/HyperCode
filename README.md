@@ -329,3 +329,7 @@ TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
 
 Strengths: Individualization | Relator | Responsibility | Context | Empathy
 </blockquote>
+
+Project Presentation:
+
+https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit?usp=sharing
