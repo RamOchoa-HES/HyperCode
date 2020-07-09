@@ -26,7 +26,21 @@
 
 #### User Persona
 
-- Samantha is a library administrator. She has witnessed the challenge of not having a uniform method or portal to track customer needs and resource utilization. There are currently documents in spreadsheets but it is difficult to gather, analyze, and present to leadership.
+Personal information
+Name:        Isabel Smith
+Age:        34
+Job:        Librarian
+Location:    MA
+Description:    Isabel is a librarian working for an academic institution
+
+Goals
+Isabel’s goal is to be able to keep accurate statistics on all the different services her library offers.
+
+Frustrations
+It is hard to keep track and report statistics by only using spreadsheets. They maybe become a not visually friendly and as time goes by, as the statistics increase, become somewhat cumbersome to manage.
+
+Tech
+Isabel uses the internet to browse the university website where she works. She also uses research databases to help students, and Excel and Word to keep track of statistics on the different services her academic library offers.
 
 #### Initial Backlog Logic
 
@@ -255,7 +269,6 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 #### Peer Mob Evidence Sprint 2
 
 * Mobbing evidence - https://docs.google.com/document/d/1-HQXQMbjg5LCBAydo4fG0N-eMWsNDXpg6lHzfCRi4g8/edit?usp=sharing
-* pairing evidence - https://team4-iix1947.slack.com/files/U016V77GRUG/F016R8K9X1B/gmt20200708-221622_ramiro-och_1450x774.mp4
 
 #### Production urls to front and back end for sprint 2
 
