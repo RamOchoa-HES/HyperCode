@@ -92,7 +92,7 @@ public class AccessServiceControllerTest {
 
         when(service.saveAccessService(any())).thenReturn(accessService);
 
-        this.mockMvc.perform(post("/api/accessService")
+        this.mockMvc.perform(post("/api/accessServices")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"id\": 11, \"year\": 2020, \"semester\": \"Summer\"}")
                 .accept(MediaType.APPLICATION_JSON))
@@ -122,7 +122,7 @@ public class AccessServiceControllerTest {
 
         when(service.saveAccessServices(any())).thenReturn(accessServices);
 
-        this.mockMvc.perform(post("/api/accessServices")
+        this.mockMvc.perform(post("/api/accessServices/multiple")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("[{\"id\": 11, \"year\": 2020, \"semester\": \"Summer\"}, {\"id\": 22, \"year\": 1990, \"semester\": \"Fall\"}]")
                 .accept(MediaType.APPLICATION_JSON))
