@@ -218,7 +218,7 @@ Status update, I basically just came here on this thread to see what each and ev
 Update: we have GitLab account and I know how to build the .yml file which defines the stages of testing and deployment. Impediment: the newest builds are not compiling on my home machine. I think it's an issue of intelliJ settings having trouble finding the JDK, so I presume once I figure out which setting is wrong it will be all set. If anyone has thoughts on the subject please share, or if anyone has same issue: when I try to run it is not recognizing the names of any Java classes. As soon as I get past this impediment I should have the project up on GitLab and we can have it run through its first CI pipeline
 
 #### German Guzman  12:07 PM
-Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI//CD as able.
+Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI/CD as able.
 
 #### Ram Ochoa  3:09 PM
 Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the TDD and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
