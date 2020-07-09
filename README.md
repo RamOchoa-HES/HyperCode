@@ -257,14 +257,18 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 * Mobbing evidence - https://docs.google.com/document/d/1-HQXQMbjg5LCBAydo4fG0N-eMWsNDXpg6lHzfCRi4g8/edit?usp=sharing
 
 
+#### Production urls to front and back end
+
+Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
+Front end - https://libstatshelperclientnew.cfapps.io/#/home
+
 #### Sprint Review 1
 
 We met with our stake holder Samantha on 7/6/2020
 We showed her our increments in regards to the Access Services Pages (input and output) as well as the access to the login page.
 
-https://libstatshelperclient.cfapps.io/
-
-https://hypercode.cfapps.io/api/accessServices
+Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
+Front end - https://libstatshelperclientnew.cfapps.io/#/home
 
 #### Our Sprint Review and Sprint Retrospective
 
