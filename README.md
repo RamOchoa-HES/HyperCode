@@ -280,7 +280,7 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 
 #### Sprint 2 story completion 
 
-- All of the 17 points that we forecasted for the sprint were completed by development team members
+- All of the 17 points that we forecasted for the sprint were completed by development team members. PLease note the stories for sprint 2 have a blue label.
 
 #### Sprint Review 1
 
