@@ -190,15 +190,15 @@ Working on a seeder for the database so we do not have to enter the initial data
 
 Today: I will begin connecting the login page with the database. Impediments: None as of yet.
 
-##### Tofik
+###### Tofik
 
 Reviewing and making sure deployment to production is good.
 
-##### Jeff
+###### Jeff
 
 I will work with team to finalize and troubleshoot Front End/Back End integration and deployment of the application to the server
 
-##### Emmanuel
+###### Emmanuel
 
 Help the team with insight on sprint review and sprint retrospective during our upcoming meeting
 
