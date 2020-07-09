@@ -278,6 +278,10 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 
 - Please use reginaadmin as username and regina1805 as password to log in and see content
 
+#### Sprint 2 story completion 
+
+- All of the 17 points that we forecasted for the sprint were completed by development team members
+
 #### Sprint Review 1
 
 We met with our stake holder Samantha on 7/6/2020
