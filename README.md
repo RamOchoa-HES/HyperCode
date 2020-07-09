@@ -202,32 +202,32 @@ I will work with team to finalize and troubleshoot Front End/Back End integratio
 
 Help the team with insight on sprint review and sprint retrospective during our upcoming meeting
 
-#### Impediments
+##### Impediments
 
 Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
 
 #### Daily Scrum Evidence Sprint 2 July 8
 
-#### Tofik Mussa  12:59 AM
+###### Tofik Mussa  12:59 AM
 Status update - I was able to get authentication working in the back end this evening. I will continue working to integrate with the front end
 
-#### Rogerlingom2015  10:49 AM
+###### Rogerlingom2015  10:49 AM
 Status update, I basically just came here on this thread to see what each and everyone is posting. To check if anyone has expressed any impediments and if the group as a whole is moving forward. Please all let's keep posting what we got going on on this thread as what we have going on is actually part of the work we are doing as a team.
 
-#### Jeffrey Winning  11:14 AM
+###### Jeffrey Winning  11:14 AM
 Update: we have GitLab account and I know how to build the .yml file which defines the stages of testing and deployment. Impediment: the newest builds are not compiling on my home machine. I think it's an issue of intelliJ settings having trouble finding the JDK, so I presume once I figure out which setting is wrong it will be all set. If anyone has thoughts on the subject please share, or if anyone has same issue: when I try to run it is not recognizing the names of any Java classes. As soon as I get past this impediment I should have the project up on GitLab and we can have it run through its first CI pipeline
 
-#### German Guzman  12:07 PM
+###### German Guzman  12:07 PM
 Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI/CD as able.
 
-#### Ram Ochoa  3:09 PM
+###### Ram Ochoa  3:09 PM
 Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the TDD and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
 3:09
 Screen Shot 2020-07-08 at 2.00.56 PM.png 
 Screen Shot 2020-07-08 at 2.00.56 PM.png
 Yesterday: created basic TDD tests and pushed them to Github. Today: I will continue working on testing, to create more elaborate tests, and push the BDD test to Github. While more testing is done the CD can be worked on for the tests in place. Tomorrow: I will join in the presenting of our project and the sprint retrospective. Impediments: None as of yet. (edited) 
 
-#### kristen  7:02 PM
+###### kristen  7:02 PM
 Yesterday: research for CI/CD and GitLab
 Tomorrow: helping with bugs
 
