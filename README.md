@@ -267,8 +267,8 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 We met with our stake holder Samantha on 7/6/2020
 We showed her our increments in regards to the Access Services Pages (input and output) as well as the access to the login page.
 
-Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
-Front end - https://libstatshelperclientnew.cfapps.io/#/home
+* Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
+* Front end - https://libstatshelperclientnew.cfapps.io/#/home
 
 #### Our Sprint Review and Sprint Retrospective
 
