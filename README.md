@@ -303,7 +303,10 @@ Most of what needed to be done by the product owner is documented in these slide
 ### Sprint 2 Product Increment
 We completed a total of 17 points towards finishing up our product. We added CRUD functionality to the application and scaffolded our application  with authentication. The next step is to build visually attractive charts for reporting and analytics.
 
-#### Our Sprint Review and Sprint Retrospective
+### Sprint 2 Stakeholders feedback
+Our clients were happy with the application. For the next sprint, they asked us to implement bar charts to cater non technical audience. We revised our backlog based on their feedback.
+
+#### Our Sprint 1 Review and Sprint1  Retrospective
 
 We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
 
