@@ -1,0 +1,327 @@
+Started by user Tofik Mussa
+Obtained Jenkinsfile from git https://github.com/tmussa1/library-stats-tracker-back.git
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+
+[Pipeline] node
+
+Running on Jenkins in C:\Program Files (x86)\Jenkins\workspace\hypercode
+[Pipeline] {
+
+[Pipeline] stage
+
+[Pipeline] { (Declarative: Checkout SCM)
+
+[Pipeline] checkout
+
+using credential 8da1da0e-9eaa-468e-ad70-be70d1e7ad04
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/tmussa1/library-stats-tracker-back.git # timeout=10
+Fetching upstream changes from https://github.com/tmussa1/library-stats-tracker-back.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress -- https://github.com/tmussa1/library-stats-tracker-back.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 4e95f7f8e299c16038433641e3b3b9955f261b4b (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 4e95f7f8e299c16038433641e3b3b9955f261b4b # timeout=10
+Commit message: "new jenkins"
+ > git.exe rev-list --no-walk 4e95f7f8e299c16038433641e3b3b9955f261b4b # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+
+[Pipeline] {
+
+[Pipeline] stage
+
+[Pipeline] { (Declarative: Tool Install)
+
+[Pipeline] tool
+
+[Pipeline] envVarsForTool
+
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+
+[Pipeline] {
+
+[Pipeline] stage
+
+[Pipeline] { (Compile stage)
+
+[Pipeline] tool
+
+[Pipeline] envVarsForTool
+
+[Pipeline] withEnv
+
+[Pipeline] {
+
+[Pipeline] bat
+
+
+C:\Program Files (x86)\Jenkins\workspace\hypercode>mvn clean install 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.lib.stats.helper:LibStatsHelper >-----------------
+[INFO] Building LibStatsHelper 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ LibStatsHelper ---
+[INFO] Deleting C:\Program Files (x86)\Jenkins\workspace\hypercode\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ LibStatsHelper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ LibStatsHelper ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to C:\Program Files (x86)\Jenkins\workspace\hypercode\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ LibStatsHelper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\hypercode\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ LibStatsHelper ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to C:\Program Files (x86)\Jenkins\workspace\hypercode\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ LibStatsHelper ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ LibStatsHelper ---
+[INFO] Building jar: C:\Program Files (x86)\Jenkins\workspace\hypercode\target\LibStatsHelper-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ LibStatsHelper ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ LibStatsHelper ---
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\hypercode\target\LibStatsHelper-0.0.1-SNAPSHOT.jar to C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\lib\stats\helper\LibStatsHelper\0.0.1-SNAPSHOT\LibStatsHelper-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Program Files (x86)\Jenkins\workspace\hypercode\pom.xml to C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\lib\stats\helper\LibStatsHelper\0.0.1-SNAPSHOT\LibStatsHelper-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.941 s
+[INFO] Finished at: 2020-07-08T23:30:11-04:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (testing stage)
+
+[Pipeline] tool
+
+[Pipeline] envVarsForTool
+
+[Pipeline] withEnv
+
+[Pipeline] {
+
+[Pipeline] bat
+
+
+C:\Program Files (x86)\Jenkins\workspace\hypercode>mvn test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.lib.stats.helper:LibStatsHelper >-----------------
+[INFO] Building LibStatsHelper 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ LibStatsHelper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ LibStatsHelper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ LibStatsHelper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Program Files (x86)\Jenkins\workspace\hypercode\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ LibStatsHelper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ LibStatsHelper ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.021 s
+[INFO] Finished at: 2020-07-08T23:30:22-04:00
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+
+[Pipeline] { (deployment stage)
+
+[Pipeline] tool
+
+[Pipeline] envVarsForTool
+
+[Pipeline] withEnv
+
+[Pipeline] {
+
+[Pipeline] bat
+
+
+C:\Program Files (x86)\Jenkins\workspace\hypercode>cf login -a http://api.run.pivotal.io -u gguzman@g.harvard.edu -p ReginaAdmin1805. 
+API endpoint: http://api.run.pivotal.io
+
+Warning: Insecure http API endpoint detected: secure https API endpoints are recommended
+
+Authenticating...
+OK
+
+Select an org:
+1. hypercode
+2. hypercodeclient
+
+Org (enter to skip): 
+
+
+API endpoint:   http://api.run.pivotal.io (API version: 3.86.0)
+User:           gguzman@g.harvard.edu
+No org or space targeted, use 'cf target -o ORG -s SPACE'
+[Pipeline] bat
+
+
+C:\Program Files (x86)\Jenkins\workspace\hypercode>cf target -o hypercode -s development 
+api endpoint:   http://api.run.pivotal.io
+api version:    2.151.0
+user:           gguzman@g.harvard.edu
+org:            hypercode
+space:          development
+[Pipeline] bat
+
+
+C:\Program Files (x86)\Jenkins\workspace\hypercode>cf push LibStatsHelper 
+Pushing from manifest to org hypercode / space development as gguzman@g.harvard.edu...
+Using manifest file C:\Program Files (x86)\Jenkins\workspace\hypercode\manifest.yml
+Getting app info...
+Updating app with these attributes...
+  name:                LibStatsHelper
+  path:                C:\Program Files (x86)\Jenkins\workspace\hypercode\target\LibStatsHelper-0.0.1-SNAPSHOT.jar
+  buildpacks:
++   https://github.com/cloudfoundry/java-buildpack.git
+  disk quota:          1G
+  health check type:   port
+- instances:           2
++ instances:           1
+- memory:              1G
++ memory:              768M
+  stack:               cflinuxfs3
+  services:
+    autoscale-development
++   mysqldb
+  routes:
+    libstatshelper.cfapps.io
+
+Updating app LibStatsHelper...
+Mapping routes...
+Binding services...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+
+ 0 B / 491.73 KiB    0.00%
+ 160.00 KiB / 491.73 KiB   32.54%
+ 224.00 KiB / 491.73 KiB   45.55%
+ 256.00 KiB / 491.73 KiB   52.06%
+ 320.00 KiB / 491.73 KiB   65.08%
+ 448.00 KiB / 491.73 KiB   91.11%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00%
+ 491.73 KiB / 491.73 KiB  100.00% 2s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Cell 0acb1c25-9364-4945-8a2f-cd54acdf3135 creating container for instance a68385e4-f3dc-4e1f-9f3a-4f93dc7f6a2a
+   Cell 0acb1c25-9364-4945-8a2f-cd54acdf3135 successfully created container for instance a68385e4-f3dc-4e1f-9f3a-4f93dc7f6a2a
+   Downloading build artifacts cache...
+   Downloading app package...
+   Downloaded build artifacts cache (129B)
+   Downloaded app package (36.5M)
+   [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mb6462f7[0m | https://github.com/cloudfoundry/java-buildpack.git#b6462f7
+   [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(0.3s)[0m[23m
+   [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m1.8.0_252[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre8u252%2B9-linux-amd64.tar.gz [3m[32m(0.4s)[0m[23m
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.3s)[0m[23m
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(0.1s)[0m[23m
+          Loaded Classes: 16946, Threads: 250
+   [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.11.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar [3m[32m(0.0s)[0m[23m
+   [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.18.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar [3m[32m(0.0s)[0m[23m
+   [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.11.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar [3m[32m(0.0s)[0m[23m
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (42.4M)
+   Uploaded droplet (79M)
+   Uploading complete
+   Cell 0acb1c25-9364-4945-8a2f-cd54acdf3135 stopping instance a68385e4-f3dc-4e1f-9f3a-4f93dc7f6a2a
+   Cell 0acb1c25-9364-4945-8a2f-cd54acdf3135 destroying container for instance a68385e4-f3dc-4e1f-9f3a-4f93dc7f6a2a
+   Cell 0acb1c25-9364-4945-8a2f-cd54acdf3135 successfully destroyed container for instance a68385e4-f3dc-4e1f-9f3a-4f93dc7f6a2a
+
+Waiting for app to start...
+
+name:              LibStatsHelper
+requested state:   started
+routes:            libstatshelper.cfapps.io
+last uploaded:     Wed 08 Jul 23:31:18 EDT 2020
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/2
+memory usage:    768M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=17740 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher
+     state      since                  cpu    memory           disk           details
+#0   running    2020-07-09T03:31:44Z   0.0%   181.2M of 768M   150.6M of 1G   
+#1   starting   2020-07-09T03:31:23Z   0.0%   161.4M of 768M   150.6M of 1G   
+
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
