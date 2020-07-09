@@ -110,7 +110,7 @@ We used the poker game to assign points to our stories. Product owner asked the 
 
 - Total points: 17 
 
-Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%
+Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%. All of our stories were big enough to be completed in one sprint and nothing more.
 
 * Access Services Editor UI - 5
 * Security & Authentication Back-end - 5
