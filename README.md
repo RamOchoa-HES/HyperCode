@@ -255,7 +255,7 @@ https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyR
 #### Peer Mob Evidence Sprint 2
 
 * Mobbing evidence - https://docs.google.com/document/d/1-HQXQMbjg5LCBAydo4fG0N-eMWsNDXpg6lHzfCRi4g8/edit?usp=sharing
-
+* pairing evidence - https://team4-iix1947.slack.com/files/U016V77GRUG/F016R8K9X1B/gmt20200708-221622_ramiro-och_1450x774.mp4
 
 #### Production urls to front and back end for sprint 2
 
