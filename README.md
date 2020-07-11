@@ -298,10 +298,6 @@ We showed her our increments in regards to the Access Services Pages (input and 
 
 We sent video for rehearsal and sprint review to teaching staff via Slack.
 
-#### Product Owner Final Notes
-
-Most of what needed to be done by the product owner is documented in these slide decks of his presentation. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
-
 ### Sprint 2 Product Increment
 We completed a total of 17 points towards finishing up our product. We added CRUD functionality to the application and scaffolded our application  with authentication. The next step is to build visually attractive charts for reporting and analytics.
 
@@ -344,5 +340,7 @@ Strengths: Individualization | Relator | Responsibility | Context | Empathy
 </blockquote>
 
 Project Presentation:
+
+Most of what needed to be done by the product owner is documented in these slide decks of his presentation. 
 
 https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit?usp=sharing
