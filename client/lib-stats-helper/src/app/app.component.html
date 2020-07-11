@@ -15,7 +15,7 @@
           aria-expanded="false"
           routerLink="access"
         >
-          Access Services
+          <span id="access">Access Services</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item text-secondary" routerLink="access/add"
@@ -183,7 +183,9 @@
         >
       </li>
       <li class="nav-item" *ngIf="!loggedIn && !isLogggedIn()">
-        <a class="nav-link" routerLink="login"><Strong>Log In</Strong></a>
+        <a class="nav-link" routerLink="login" id="logIn"
+          ><Strong>Log In</Strong></a
+        >
       </li>
     </ul>
   </div>

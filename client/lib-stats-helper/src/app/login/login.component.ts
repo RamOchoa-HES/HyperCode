@@ -17,28 +17,26 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) {}
 
-  errorMessage = "";
+  errorMessage = false;
 
   ngOnInit() {}
 
   logIn() {
-    this.logInService
-      .authenticate(this.username, this.password)
-      .subscribe(
-        (data) => {
-          sessionStorage.setItem("username", data.username);
-          sessionStorage.setItem("role", data.role.role);
-          sessionStorage.setItem("password", this.password);
-          this.authenticated = true;
-          this.router.navigate(["home"]);
-        },
-        (err) => (this.authenticated = false)
-      );
+    this.logInService.authenticate(this.username, this.password).subscribe(
+      (data) => {
+        sessionStorage.setItem("username", data.username);
+        sessionStorage.setItem("role", data.role.role);
+        sessionStorage.setItem("password", this.password);
+        this.authenticated = true;
+        this.router.navigate(["home"]);
+      },
+      () => (this.authenticated = false)
+    );
 
     if (!this.authenticated) {
-      this.errorMessage = "Incorrect Username or Password";
+      this.errorMessage = true;
     } else {
-      this.errorMessage = "";
+      this.errorMessage = false;
     }
   }
 }

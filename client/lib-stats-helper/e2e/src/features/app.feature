@@ -1,4 +1,4 @@
-Feature: Go to the homepage
+Feature: Homepage and Logging In
     Display Regina Library
 
     Scenario: Home Page
@@ -6,6 +6,9 @@ Feature: Go to the homepage
         When I wait for the page to load
         Then I should see Regina Library title
     Scenario: Wrong LogIn
-        Given I am on the login page
-        When I enter wrong password
-        Then I should see invalid password message
+        Given I am on login page
+        When I enter the wrong username
+        And I enter the wrong password
+        And I click submit
+        And I try to access internal page
+        Then Navigation will redirect me back homepage
