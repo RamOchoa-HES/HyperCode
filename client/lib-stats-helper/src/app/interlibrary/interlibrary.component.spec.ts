@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { InterlibraryComponent } from './interlibrary.component';
+import { InterlibraryComponent } from "./interlibrary.component";
 
-fdescribe('InterlibraryComponent', () => {
+fdescribe("InterlibraryComponent", () => {
   let component: InterlibraryComponent;
   let fixture: ComponentFixture<InterlibraryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InterlibraryComponent ]
-    })
-    .compileComponents();
+      declarations: [InterlibraryComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,13 @@ fdescribe('InterlibraryComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create interlibrary page", () => {
     expect(component).toBeTruthy();
+  });
+
+  it("should display welcome message", () => {
+    const tag = fixture.debugElement.nativeElement.querySelector(".display-6");
+    expect(tag.innerHTML).toBe("Welcome to Interlibrary Loan");
+    expect(tag.innerHTML.length).toBeGreaterThan(0);
   });
 });

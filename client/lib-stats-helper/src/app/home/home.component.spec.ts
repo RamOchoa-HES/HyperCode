@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HomeComponent } from './home.component';
+import { HomeComponent } from "./home.component";
 
-fdescribe('HomeComponent', () => {
+fdescribe("HomeComponent", () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,12 @@ fdescribe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create homepage", () => {
     expect(component).toBeTruthy();
+  });
+  it("should display application title", () => {
+    const tag = fixture.debugElement.nativeElement.querySelector("#appTitle");
+    expect(tag.innerHTML).toBe("A Library Statistics Tracker App");
+    expect(tag.innerHTML.length).toBeGreaterThan(0);
   });
 });

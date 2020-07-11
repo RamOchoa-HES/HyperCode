@@ -3,6 +3,7 @@ import { FormsModule } from "@angular/forms";
 import { LoginComponent } from "./login.component";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterTestingModule } from "@angular/router/testing";
+import { By } from "protractor";
 
 fdescribe("LoginComponent", () => {
   let component: LoginComponent;
@@ -21,20 +22,11 @@ fdescribe("LoginComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it("should create login page", () => {
     expect(component).toBeTruthy();
   });
+
+  it("should enter username", () => {
+    const tag = fixture.debugElement.nativeElement.querySelector("#username");
+  });
 });
-/*
-
-
-
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
-
-  beforeEach(async((){
-    TestBed.configureTestingModule({
-      declarations:[LoginComponent]
-    }).compileComponents();
-  }))
-  */

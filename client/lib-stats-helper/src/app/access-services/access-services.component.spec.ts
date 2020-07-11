@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AccessServicesComponent } from './access-services.component';
+import { AccessServicesComponent } from "./access-services.component";
 
-fdescribe('AccessServicesComponent', () => {
+fdescribe("AccessServicesComponent", () => {
   let component: AccessServicesComponent;
   let fixture: ComponentFixture<AccessServicesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccessServicesComponent ]
-    })
-    .compileComponents();
+      declarations: [AccessServicesComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,13 @@ fdescribe('AccessServicesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create access service page", () => {
     expect(component).toBeTruthy();
+  });
+
+  it("should display welcome message", () => {
+    const tag = fixture.debugElement.nativeElement.querySelector(".display-6");
+    expect(tag.innerHTML).toBe("Welcome to Access Services");
+    expect(tag.innerHTML.length).toBeGreaterThan(0);
   });
 });
