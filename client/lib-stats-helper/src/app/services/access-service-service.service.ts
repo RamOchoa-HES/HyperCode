@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { environment } from "../../environments/environment";
 import { AccessService } from "../models/models";
 import { Router } from "@angular/router";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -12,17 +13,23 @@ export class AccessServiceServiceService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  getAccessServices() {
+  getAccessServices(): Observable<AccessService[]> {
     let accessServiceGetAllUrl = `${this.baseUrl}/api/accessServices`;
 
-    return this.http.get(accessServiceGetAllUrl, this.httpOptionsHelper());
+    return this.http.get<AccessService[]>(
+      accessServiceGetAllUrl,
+      this.httpOptionsHelper()
+    );
   }
 
   createAccessService(accessService: AccessService) {
-
     let accessServiceGetAllUrl = this.baseUrl + "/api/accessServices";
 
-    return this.http.post<AccessService>(accessServiceGetAllUrl, accessService, this.httpOptionsHelper());
+    return this.http.post<AccessService>(
+      accessServiceGetAllUrl,
+      accessService,
+      this.httpOptionsHelper()
+    );
   }
 
   httpOptionsHelper() {

@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MarketingComponent } from './marketing.component';
+import { MarketingComponent } from "./marketing.component";
 
-describe('MarketingComponent', () => {
+fdescribe("MarketingComponent", () => {
   let component: MarketingComponent;
   let fixture: ComponentFixture<MarketingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MarketingComponent ]
-    })
-    .compileComponents();
+      declarations: [MarketingComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,13 @@ describe('MarketingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create marketing", () => {
     expect(component).toBeTruthy();
+  });
+
+  it("should display welcome message", () => {
+    const tag = fixture.debugElement.nativeElement.querySelector(".display-6");
+    expect(tag.innerHTML).toBe("Welcome to Educational Resource Center");
+    expect(tag.innerHTML.length).toBeGreaterThan(0);
   });
 });

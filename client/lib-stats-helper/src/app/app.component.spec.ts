@@ -1,16 +1,16 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { TestBed, async } from "@angular/core/testing";
+import { AppComponent } from "./app.component";
+import { RouterTestingModule } from "@angular/router/testing";
 
-describe('AppComponent', () => {
+fdescribe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 
-  it('should create the app', () => {
+  it("should create app component", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
@@ -19,13 +19,15 @@ describe('AppComponent', () => {
   it(`should have as title 'lib-stats-helper'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('lib-stats-helper');
+    expect(app.title).toEqual("lib-stats-helper");
   });
 
-  it('should render title in a h1 tag', () => {
+  it("should render title in a h1 tag", () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to lib-stats-helper!');
+    expect(compiled.querySelector("strong").textContent).toContain(
+      "Regina Library"
+    );
   });
 });
