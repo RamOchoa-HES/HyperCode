@@ -235,7 +235,8 @@ Update: we have GitLab account and I know how to build the .yml file which defin
 Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI/CD as able.
 
 ###### Ram Ochoa  3:09 PM
-Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the TDD and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
+Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the 
+and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
 3:09
 Screen Shot 2020-07-08 at 2.00.56 PM.png 
 Screen Shot 2020-07-08 at 2.00.56 PM.png
@@ -251,7 +252,7 @@ https://github.com/RamOchoa-HES/HyperCode/blob/master/logs.txt
 
 #### TDD/BDD
 
-* There are 11 unit tests on the server side with mockito in sprint 1. There are 23 additional unit tests in sprint 2 on the client side with Karma/Jasmin. Here is a picture of test output https://github.com/RamOchoa-HES/HyperCode/blob/master/tests.PNG
+* There are 11 unit tests on the server side with mockito in sprint 1. There are 23 additional unit tests in sprint 2 on the client side with Karma/Jasmin. Some are more extensive than others. Here is a picture of test output https://github.com/RamOchoa-HES/HyperCode/blob/master/tests.PNG
 
 * BDD directory - https://github.com/RamOchoa-HES/HyperCode/tree/master/client/lib-stats-helper/e2e/src
 
