@@ -6,7 +6,7 @@
 - Ram Ochoa - Scrum Master
 - Tofik Mussa - Developer
 - Jeffrey Winning - Developer
-- Emmanuel Lingom
+- Emmanuel Lingom - Developer
 - Kristen Rutherford - Developer
 
 #### Our far vision
@@ -24,9 +24,23 @@
 #### Real stakeholder
 - Samantha Cabral, Assistant Director at Regina Library
 
-#### User Persona
+#### User Persona - Library staff
 
-- Samantha is a library administrator. She has witnessed the challenge of not having a uniform method or portal to track customer needs and resource utilization. There are currently documents in spreadsheets but it is difficult to gather, analyze, and present to leadership.
+Personal information
+Name:        Isabel Smith
+Age:        34
+Job:        Librarian
+Location:    MA
+Description:    Isabel is a librarian working for an academic institution
+
+Goals
+Isabel’s goal is to be able to keep accurate statistics on all the different services her library offers.
+
+Frustrations
+It is hard to keep track and report statistics by only using spreadsheets. They maybe become a not visually friendly and as time goes by, as the statistics increase, become somewhat cumbersome to manage.
+
+Tech
+Isabel uses the internet to browse the university website where she works. She also uses research databases to help students, and Excel and Word to keep track of statistics on the different services her academic library offers.
 
 #### Initial Backlog Logic
 
@@ -94,14 +108,14 @@ We used the poker game to assign points to our stories. Product owner asked the 
 
 #### Sprint 2 Forecast - Yesterday's Weather
 
-- Total points: 17 
+- Total points: 17
 
-Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%
+Note: compared to our previous sprint, this sprint has an increased capacity due to team members availability. We believe our capacity was at 80% but this sprint our capacity is at 100%. All of our stories were big enough to be completed in one sprint and nothing more.
 
 * Access Services Editor UI - 5
 * Security & Authentication Back-end - 5
 * Advanced Login UI Front End - 5
-* Daily Scrum Check - 2 
+* Daily scrum check - 2
 
 #### Burndown Chart
 
@@ -190,46 +204,55 @@ Working on a seeder for the database so we do not have to enter the initial data
 
 Today: I will begin connecting the login page with the database. Impediments: None as of yet.
 
-##### Tofik
+###### Tofik
 
 Reviewing and making sure deployment to production is good.
 
-##### Jeff
+###### Jeff
 
 I will work with team to finalize and troubleshoot Front End/Back End integration and deployment of the application to the server
 
-##### Emmanuel
+###### Emmanuel
 
 Help the team with insight on sprint review and sprint retrospective during our upcoming meeting
 
-#### Impediments
+##### Impediments
 
 Issues with initial Production server (Digital ocean). We need to change it to cfapps in order to remove the impediment
 
 #### Daily Scrum Evidence Sprint 2 July 8
 
-#### Tofik Mussa  12:59 AM
+###### Tofik Mussa  12:59 AM
 Status update - I was able to get authentication working in the back end this evening. I will continue working to integrate with the front end
 
-#### Rogerlingom2015  10:49 AM
+###### Rogerlingom2015  10:49 AM
 Status update, I basically just came here on this thread to see what each and everyone is posting. To check if anyone has expressed any impediments and if the group as a whole is moving forward. Please all let's keep posting what we got going on on this thread as what we have going on is actually part of the work we are doing as a team.
 
-#### Jeffrey Winning  11:14 AM
+###### Jeffrey Winning  11:14 AM
 Update: we have GitLab account and I know how to build the .yml file which defines the stages of testing and deployment. Impediment: the newest builds are not compiling on my home machine. I think it's an issue of intelliJ settings having trouble finding the JDK, so I presume once I figure out which setting is wrong it will be all set. If anyone has thoughts on the subject please share, or if anyone has same issue: when I try to run it is not recognizing the names of any Java classes. As soon as I get past this impediment I should have the project up on GitLab and we can have it run through its first CI pipeline
 
-#### German Guzman  12:07 PM
+###### German Guzman  12:07 PM
 Status update: working on presentation to stake holders as well and updating documentation needed in our README. I will try to help with CI/CD as able.
 
-#### Ram Ochoa  3:09 PM
+###### Ram Ochoa  3:09 PM
 Update: I got a BDD test to run by inserting a welcome message in an h1 tag on the landing page using protractor e2e. This is a start. I will work on making both the TDD and this BDD test more targeted today. In the mean time the CD should be able to be implemented using these tests and the backend tests Tofik made.
 3:09
 Screen Shot 2020-07-08 at 2.00.56 PM.png 
 Screen Shot 2020-07-08 at 2.00.56 PM.png
 Yesterday: created basic TDD tests and pushed them to Github. Today: I will continue working on testing, to create more elaborate tests, and push the BDD test to Github. While more testing is done the CD can be worked on for the tests in place. Tomorrow: I will join in the presenting of our project and the sprint retrospective. Impediments: None as of yet. (edited) 
 
-#### kristen  7:02 PM
+###### kristen  7:02 PM
 Yesterday: research for CI/CD and GitLab
 Tomorrow: helping with bugs
+
+#### Proof of CI/CD pipeline setup
+
+https://github.com/RamOchoa-HES/HyperCode/blob/master/logs.txt
+
+#### TDD/BDD
+
+* There are 11 unit tests in the server side with mockito and 10 unit tests on the client side with Karma/Jasmin
+* BDD directory - https://github.com/RamOchoa-HES/HyperCode/tree/master/client/lib-stats-helper/e2e/src
 
 #### Peer Mob Evidence Sprint 1
 
@@ -244,16 +267,46 @@ https://harvard.zoom.us/rec/share/zOUlKJvo3D5JYYGdskX4U544MK2_T6a82nMf_PYJyBz3hv
 * Pairing Evidence - 2 team members pairing
 https://harvard.zoom.us/rec/play/uZQtc-j7rG43G4WRsQSDU6N6W9W0L_isgygf__EMnhq8VyRSYwGjYrUaZOtU_Hb_x-_njxKB8rsv7mp9?continueMode=true
 
+#### Peer Mob Evidence Sprint 2
+
+* Mobbing evidence - https://docs.google.com/document/d/1-HQXQMbjg5LCBAydo4fG0N-eMWsNDXpg6lHzfCRi4g8/edit?usp=sharing
+
+#### Production urls to front and back end for sprint 2
+
+* Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
+* Front end - https://libstatshelperclientnew.cfapps.io/#/home
+
+- Please use reginaadmin as username and regina1805 as password to log in and see content
+
+#### Sprint 2 story completion 
+
+- All of the 17 points that we forecasted for the sprint were completed by development team members. PLease note the stories for sprint 2 have a blue label.
+
 #### Sprint Review 1
 
 We met with our stake holder Samantha on 7/6/2020
 We showed her our increments in regards to the Access Services Pages (input and output) as well as the access to the login page.
 
-https://libstatshelperclient.cfapps.io/
+* Back end  - https://libstatshelperserver.cfapps.io/api/accessServices
+* Front end - https://libstatshelperclientnew.cfapps.io/#/home
 
-https://hypercode.cfapps.io/api/accessServices
+- Please use reginaadmin as username and regina1805 as password to log in and see content
 
-#### Our Sprint Review and Sprint Retrospective
+#### Sprint 2 Review
+
+We sent video for rehearsal and sprint review to teaching staff via Slack.
+
+#### Product Owner Final Notes
+
+Most of what needed to be done by the product owner is documented in these slide decks of his presentation. https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit#slide=id.p
+
+### Sprint 2 Product Increment
+We completed a total of 17 points towards finishing up our product. We added CRUD functionality to the application and scaffolded our application  with authentication. The next step is to build visually attractive charts for reporting and analytics.
+
+### Sprint 2 Stakeholders feedback
+Our clients were happy with the application. For the next sprint, they asked us to implement bar charts to cater non technical audience. We revised our backlog based on their feedback.
+
+#### Our Sprint 1 Review and Sprint1  Retrospective
 
 We demoed our application that is deployed in production to our stakeholder and did our sprint retrospective after that in the following video
 
@@ -281,8 +334,13 @@ Rivier University
 
 
 
+
 TRANSFORMING HEARTS AND MINDS TO SERVE THE WORLD
 
 
 Strengths: Individualization | Relator | Responsibility | Context | Empathy
 </blockquote>
+
+Project Presentation:
+
+https://docs.google.com/presentation/d/1PUv56sfzb3jxAck7OphXHVCyen8PToEUKfHB2p-8Sxc/edit?usp=sharing
