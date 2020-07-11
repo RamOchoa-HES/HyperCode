@@ -27,6 +27,28 @@ fdescribe("LoginComponent", () => {
   });
 
   it("should enter username", () => {
-    const tag = fixture.debugElement.nativeElement.querySelector("#username");
+    const usernameInput: HTMLInputElement = fixture.nativeElement.querySelector(
+      "#username"
+    );
+    fixture.detectChanges();
+    fixture.whenStable().then((val) => {
+      usernameInput.value = "Joe";
+      usernameInput.dispatchEvent(new Event("input"));
+      fixture.detectChanges();
+      expect(component.username).toBe("Joe");
+    });
+  });
+
+  it("should enter password", () => {
+    const passwordInput: HTMLInputElement = fixture.nativeElement.querySelector(
+      "#password"
+    );
+    fixture.detectChanges();
+    fixture.whenStable().then((val) => {
+      passwordInput.value = "Pass123";
+      passwordInput.dispatchEvent(new Event("input"));
+      fixture.detectChanges();
+      expect(component.password).toBe("Pass123");
+    });
   });
 });
